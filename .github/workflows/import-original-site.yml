@@ -1,0 +1,39 @@
+name: Import Travel & Life Medellín site source
+
+on:
+  push:
+    paths:
+      - ".github/workflows/import-original-site.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import-original-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out presentation repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Clone existing Travel & Life site
+        run: git clone --depth 1 --branch main https://github.com/connectnarrative/travel-life-medellin.git /tmp/travel-life-medellin
+
+      - name: Copy original site source and media
+        run: |
+          rsync -av --delete --exclude='.git' --exclude='.github' /tmp/travel-life-medellin/ ./
+          git status --short
+
+      - name: Commit original site without altering it
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "No source changes"
+          else
+            git commit -m "Import existing Travel & Life Medellin site source"
+            git push origin HEAD:main
+          fi
