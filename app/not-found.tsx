@@ -1,0 +1,1 @@
+export default function NotFound(){return <main id="main" className="page"><span className="eyebrow">404 / TRAVEL & LIFE</span><h1>Otra puerta<br/><em>te espera.</em></h1><p>No encontramos esta selección.</p><a className="button gold" href="/coleccion">EXPLORAR LA COLECCIÓN</a></main>}

@@ -1,0 +1,92 @@
+[
+  {
+    "file": "/workspace/scratch/travel-life-assets/medellin-hero.jpg",
+    "image_url": "https://images.pexels.com/photos/16637471/pexels-photo-16637471.jpeg?w=1920",
+    "source_url": "https://www.pexels.com/photo/clouds-over-medellin-at-sunset-16637471",
+    "license": "Pexels License",
+    "license_url": "https://www.pexels.com/license/",
+    "credit": "Photo by César Gaviria on Pexels (https://pexafy.com/legal/licenses/#pexels)",
+    "alt": "Medellín stretches across the Aburrá Valley beneath dramatic sunset clouds",
+    "location_note": "Confirmed Medellín, Colombia"
+  },
+  {
+    "file": "/workspace/scratch/travel-life-assets/restaurant.jpg",
+    "image_url": "https://images.pexels.com/photos/8229947/pexels-photo-8229947.jpeg?w=1280",
+    "source_url": "https://www.pexels.com/photo/the-interior-of-a-restaurant-8229947",
+    "license": "Pexels License",
+    "license_url": "https://www.pexels.com/license/",
+    "credit": "Photo by Los Muertos Crew on Pexels (https://pexafy.com/legal/licenses/#pexels)",
+    "alt": "A light-filled restaurant with white wooden tables, open doors and colorful hanging decorations",
+    "location_note": "Illustrative category imagery; exact city/property not confirmed"
+  },
+  {
+    "file": "/workspace/scratch/travel-life-assets/courtyard.jpg",
+    "image_url": "https://images.unsplash.com/photo-1626143553338-f6bc9fd8652c?w=1280",
+    "source_url": "https://unsplash.com/photos/green-palm-trees-near-white-concrete-building-during-daytime-Gc9TUhFyR_g",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "credit": "Photo by Lissete Laverde on Unsplash (https://pexafy.com/legal/licenses/#unsplash)",
+    "alt": "Serene tropical garden with palm tree standing tall surrounded by lush greenery and plants",
+    "location_note": "Illustrative category imagery; exact city/property not confirmed"
+  },
+  {
+    "file": "/workspace/scratch/travel-life-assets/coffee.jpg",
+    "image_url": "https://images.pexels.com/photos/14398271/pexels-photo-14398271.jpeg?w=1280",
+    "source_url": "https://www.pexels.com/photo/coffee-in-cup-14398271",
+    "license": "Pexels License",
+    "license_url": "https://www.pexels.com/license/",
+    "credit": "Photo by Arturo Añez. on Pexels (https://pexafy.com/legal/licenses/#pexels)",
+    "alt": "White coffee cup with blue and black checkered pattern sits on a wooden table",
+    "location_note": "Illustrative category imagery; exact city/property not confirmed"
+  },
+  {
+    "file": "/workspace/scratch/travel-life-assets/guatape.jpg",
+    "image_url": "https://images.pexels.com/photos/15229834/pexels-photo-15229834.jpeg?w=1280",
+    "source_url": "https://www.pexels.com/photo/the-rock-of-guatape-15229834",
+    "license": "Pexels License",
+    "license_url": "https://www.pexels.com/license/",
+    "credit": "Photo by Emilsen Báez on Pexels (https://pexafy.com/legal/licenses/#pexels)",
+    "alt": "Large lake surrounded by mountains and hills, with numerous islands scattered across its surface",
+    "location_note": "Guatapé source title"
+  },
+  {
+    "file": "/workspace/scratch/travel-life-assets/nightlife.jpg",
+    "image_url": "https://images.unsplash.com/photo-1679685808114-69b53dfca825?w=1280",
+    "source_url": "https://unsplash.com/photos/a-couple-of-people-sitting-at-a-table-in-front-of-a-bar-2voBM3XMt6w",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "credit": "Photo by Tai Bui on Unsplash (https://pexafy.com/legal/licenses/#unsplash)",
+    "alt": "A warmly lit rooftop cocktail bar beneath string lights with a city skyline at night",
+    "location_note": "Illustrative category imagery; exact city/property not represented"
+  },
+  {
+    "file": "/workspace/scratch/travel-life-assets/transport.jpg",
+    "image_url": "https://images.pexels.com/photos/37098542/pexels-photo-37098542.jpeg?w=1280",
+    "source_url": "https://www.pexels.com/photo/luxury-black-sedan-parked-on-city-street-37098542",
+    "license": "Pexels License",
+    "license_url": "https://www.pexels.com/license/",
+    "credit": "Photo by Thang Nguyen on Pexels (https://pexafy.com/legal/licenses/#pexels)",
+    "alt": "A polished black executive sedan parked along a city street",
+    "location_note": "Illustrative category imagery; exact city/property not represented"
+  },
+  {
+    "file": "/workspace/scratch/travel-life-assets/wellness.jpg",
+    "image_url": "https://images.pexels.com/photos/35884502/pexels-photo-35884502.jpeg?w=1280",
+    "source_url": "https://www.pexels.com/photo/serene-spa-interior-with-massage-table-and-candle-35884502",
+    "license": "Pexels License",
+    "license_url": "https://www.pexels.com/license/",
+    "credit": "Photo by Marine Fougère on Pexels (https://pexafy.com/legal/licenses/#pexels)",
+    "alt": "A neatly prepared massage table with a white rolled towel and candle in a calm spa room",
+    "location_note": "Illustrative category imagery; exact city/property not represented"
+  },
+  {
+    "file": "/workspace/scratch/travel-life-assets/dining.jpg",
+    "image_url": "https://images.unsplash.com/photo-1718578061045-b17fe1dbbd77?w=1280",
+    "source_url": "https://unsplash.com/photos/a-dimly-lit-restaurant-with-empty-tables-and-chairs-VQsV9yDspnw",
+    "license": "Unsplash License",
+    "license_url": "https://unsplash.com/license",
+    "credit": "Photo by Jahanzeb Ahsan on Unsplash (https://pexafy.com/legal/licenses/#unsplash)",
+    "alt": "An elegant restaurant with dark upholstered chairs, set tables and warm evening lighting",
+    "location_note": "Illustrative category imagery; exact city/property not represented"
+  }
+]
