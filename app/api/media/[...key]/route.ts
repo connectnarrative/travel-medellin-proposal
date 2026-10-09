@@ -1,2 +1,7 @@
-import {env} from 'cloudflare:workers';
-export async function GET(req:Request,{params}:{params:Promise<{key:string[]}>}){const{key}=await params;const object=await(env as unknown as {BUCKET:R2Bucket}).BUCKET.get(key.join('/'));if(!object)return new Response('Not found',{status:404});return new Response(object.body,{headers:{'Content-Type':object.httpMetadata?.contentType||'application/octet-stream','Cache-Control':'public, max-age=31536000, immutable','X-Content-Type-Options':'nosniff'}})}
+// Vercel presentation uses checked-in public demo assets.
+// Private R2 objects are not available on this host.
+export async function GET() {
+  return new Response('Media no disponible en esta vista de demostración.', {
+    status: 404, headers: { 'Cache-Control': 'no-store' }
+  });
+}

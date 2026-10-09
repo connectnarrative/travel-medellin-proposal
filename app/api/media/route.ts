@@ -1,3 +1,7 @@
-import {env} from 'cloudflare:workers';
-import {admin,sameOrigin} from '@/lib/server';
-export async function POST(req:Request){if(!await admin()||!sameOrigin(req))return Response.json({error:'Acceso restringido'},{status:403});try{const form=await req.formData();const file=form.get('file');if(!(file instanceof File))return Response.json({error:'Archivo requerido'},{status:400});const types:Record<string,string>={'image/jpeg':'jpg','image/png':'png','image/webp':'webp','image/avif':'avif','video/mp4':'mp4','video/webm':'webm'};if(!types[file.type]||file.size>20*1024*1024)return Response.json({error:'JPG, PNG, WebP, AVIF, MP4 o WebM. Máximo 20 MB.'},{status:400});const bucket=(env as unknown as {BUCKET:R2Bucket}).BUCKET;const key=crypto.randomUUID()+'.'+types[file.type];await bucket.put(key,await file.arrayBuffer(),{httpMetadata:{contentType:file.type}});return Response.json({url:'/api/media/'+key})}catch{return Response.json({error:'No se pudo subir el archivo'},{status:503})}}
+// R2 media uploads remain disabled until backend/auth migration.
+export async function POST() {
+  return Response.json(
+    { error: 'Subida de archivos no disponible en esta vista de demostración.' },
+    { status: 503, headers: { 'Cache-Control': 'no-store' } }
+  );
+}
