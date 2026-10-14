@@ -19,3 +19,64 @@ em,i{font-style:normal}h1,h2{font-weight:400;letter-spacing:-.055em}h3{font-weig
 .custom-brand-logo{width:225px;height:85px;object-fit:contain}
 .hero-copy h1{font-size:clamp(3.5rem,7.4vw,8rem)}
 @media(max-width:760px){.brand .brand-logo-frame{width:170px}.custom-brand-logo{width:170px;height:65px}.hero-copy h1{font-size:clamp(2.5rem,9.7vw,4.6rem)}.footer-top .brand .brand-logo-frame{width:150px}}
+
+
+/* Luxury editorial preview — the existing CMS, inquiries and booking requests remain intact. */
+.hero-editorial .hero-copy{width:94%;max-width:1180px;padding-top:clamp(100px,13vh,190px)}
+.hero-editorial .hero-copy h1{font-size:clamp(3.4rem,6.8vw,7.4rem);letter-spacing:-.065em;max-width:1100px;line-height:1.06}
+.hero-editorial .hero-copy p{max-width:470px;font-size:16px;line-height:1.85}
+.hero-editorial .hero-shade{background:linear-gradient(90deg,rgba(7,12,10,.88) 0%,rgba(13,18,15,.59) 49%,rgba(9,16,11,.2) 100%),linear-gradient(0deg,rgba(9,15,10,.8),transparent 45%)}
+.hero-editorial .hero-coordinate{color:#f6f1e4}
+.collection>.demo-note{max-width:850px;margin-top:30px;color:#aeb0a5}
+.luxe-story{display:grid;grid-template-columns:1.12fr 1fr;background:#ded8c9;color:#1c221c;min-height:650px}
+.luxe-story-image{position:relative;overflow:hidden;min-height:580px}
+.luxe-story-image>img{height:100%;min-height:580px;object-fit:cover;filter:saturate(.83)}
+.luxe-story-image:after{content:'';position:absolute;inset:55% 0 0;background:linear-gradient(0deg,#1720178a,transparent)}
+.luxe-story-image>span{position:absolute;z-index:2;bottom:30px;left:6%;font-size:10px;color:#fff;letter-spacing:.2em}
+.luxe-story-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:95px clamp(35px,9vw,150px)}
+.luxe-story-copy h2{font-size:clamp(2.9rem,4.6vw,5.1rem)}
+.luxe-story-copy .eyebrow{color:#786445}
+.luxe-story-copy em{color:#8d7652}
+.luxe-story-copy p{max-width:390px;color:#525a51;font-size:16px;line-height:1.85}
+.luxe-story-copy .text-link{color:#21291f;border-bottom-color:#76664f;margin-top:25px}
+.selected .listing-photo{overflow:hidden}
+.selected .listing-photo img{aspect-ratio:4/4.6;transition:transform .7s ease,filter .3s}
+.selected .listing-card:hover .listing-photo img{transform:scale(1.04)}
+.selected .listing-blurb{max-width:340px;margin:0;color:#b9c0b2;font-size:14px;line-height:1.75}
+.selected .listing-card h3{margin-bottom:10px}
+.private-journey{display:grid;grid-template-columns:1fr 1.15fr;gap:9%;background:#161d18}
+.private-journey-intro{max-width:490px}
+.private-journey-intro p{max-width:425px;line-height:1.9;margin-bottom:35px}
+.private-journey-steps{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;align-items:stretch}
+.private-journey-steps article{border-left:1px solid #5b614c;padding:25px 19px 18px;background:#202820;min-height:270px}
+.private-journey-steps article>svg{color:#d4bd90;margin-bottom:45px}
+.private-journey-steps article>span{display:block;color:#9ea892;letter-spacing:.1em;font-size:12px;margin-bottom:12px}
+.private-journey-steps h3{font-size:25px;margin-bottom:10px}
+.private-journey-steps p{color:#b9c1b5;font-size:13px;line-height:1.65;margin:0}
+.partner-strip{background:#e9e5db;color:#1d261e;min-height:390px}
+.partner-strip .eyebrow{color:#746447}
+.partner-strip h2{max-width:750px}
+.partner-strip em{color:#99815b}
+.partner-strip p{max-width:510px;color:#555d51;margin:10px 0 0}
+.partner-strip .button{border-color:#262d24;color:#202820;top:48%}
+.partner-strip .button:hover{background:#202820;color:#f5f2e8}
+@media(max-width:1100px){
+  .luxe-story-copy{padding:65px 8%}
+  .private-journey{grid-template-columns:1fr;gap:45px}
+  .private-journey-steps article{min-height:230px}
+  .partner-strip .button{position:static;margin-top:30px}
+}
+@media(max-width:760px){
+  .hero-editorial .hero-copy{width:100%;padding:124px 7% 135px}
+  .hero-editorial .hero-copy h1{font-size:clamp(2.55rem,9.3vw,4.6rem);line-height:1.08;overflow-wrap:break-word}
+  .hero-editorial .hero-copy p{max-width:335px;font-size:14px}
+  .luxe-story{display:flex;flex-direction:column}
+  .luxe-story-image,.luxe-story-image>img{min-height:360px;height:360px}
+  .luxe-story-copy{padding:65px 7% 75px}
+  .luxe-story-copy h2{font-size:clamp(2.6rem,9vw,4rem)}
+  .selected .listing-photo img{aspect-ratio:1.15}
+  .private-journey-steps{grid-template-columns:1fr}
+  .private-journey-steps article{min-height:auto;padding:25px}
+  .private-journey-steps article>svg{margin-bottom:25px}
+  .partner-strip h2{font-size:clamp(2.55rem,10vw,3.4rem)}
+}
