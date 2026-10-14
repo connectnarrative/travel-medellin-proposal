@@ -80,6 +80,16 @@ export default async function Home(){
       <a className="text-link" href="/cafes-medellin"><T es="DESCUBRIR CAFÉS" en="DISCOVER COFFEE"/><ArrowUpRight size={18}/></a></div>
     </section>
 
+    <section className="aurea-insiders section">
+      <div className="aurea-insiders-photo"><img src="/images/night.webp" alt="Ambiente nocturno de lujo, fotografía ilustrativa" loading="lazy"/></div>
+      <div className="aurea-insiders-content"><span className="eyebrow">LOCAL KNOWLEDGE. PERSONAL SERVICE.</span>
+        <h2><T es="La diferencia es" en="The difference is"/><br/><em><T es="conocer la ciudad." en="knowing the city."/></em></h2>
+        <p><T es="La visión detrás de AUREA reúne más de 15 años de experiencia en concierge y años de trabajo diseñando tours y experiencias en Medellín. Esta experiencia humana guía nuestra manera de ayudar a cada viajero." en="The people behind AUREA bring over 15 years of concierge experience and years of designing Medellín tours and experiences. That real-world knowledge shapes how we approach every guest."/></p>
+        <p className="demo-note"><T es="La colección presentada es todavía conceptual. Cada aliado y experiencia se valida antes de ofrecerse formalmente." en="The collection shown is currently conceptual. Partners and experiences are verified before being formally offered."/></p>
+        <a className="text-link" href="/nosotros"><T es="NUESTRA PERSPECTIVA" en="OUR APPROACH"/><ArrowUpRight size={18}/></a>
+      </div>
+    </section>
+
     <section className="private-journey section">
       <div className="private-journey-intro"><span className="eyebrow">PERSONAL. PRIVATE. CONSIDERED.</span>
         <h2><T es="El viaje comienza" en="Your journey begins"/><br/><em><T es="contigo." en="with you."/></em></h2>
