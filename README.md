@@ -43,3 +43,14 @@ Not verified in this environment: browser click-through, desktop/mobile screensh
 3. Run desktop/mobile browser acceptance and a real signed-in CMS + inquiry test on the deployment.
 4. Approve privacy/retention policy, configure lead notifications, and decide whether to migrate to Supabase/Vercel.
 5. Publish to the intended audience/domain, turn on SEO only after content approval, and register Search Console.
+
+## AUREA V1 conversion update (October 2026)
+- Approved visual direction and brand SVGs: `brand/AUREA_BRAND_LOCK.md` and `public/brand/`. Visual identity is approved for a **private demonstration only**, pending trademark and domain clearance.
+- `/concierge`: private travel inquiries with date, group, interests, approximate budget, and notes. Users can request bespoke help without first saving a listing.
+- `/partners`: applications from hotels, villas, restaurants, nightlife and experience suppliers; commercial terms are intentionally not advertised as an established monthly-membership product.
+- `/membresia`: redirected to `/partners` for backwards compatibility.
+- `/mi-llave` remains the saved-listing itinerary flow, and `/admin` remains the protected CMS.
+- `/api/leads` still stores requests in the database. WhatsApp handoff appears only when an authentic concierge number has been configured; no automatic email/push notifications have been set up.
+- Run `node scripts/check-aurea.mjs` for a lightweight source-level smoke check. The legacy `scripts/verify.mjs` predates the editorial-demo hiding, rebrand and redirects and needs its assertions updated before using it as a release gate.
+- This codebase currently depends on Cloudflare Workers + D1 + R2 + the hosting authentication adapter. A Vercel deployment requires an appropriate backend adapter/migration and credentials; it is not a zero-configuration port.
+- Before public promotion: confirm trademark availability (not guaranteed), image/media rights, partner claims, production build, browser QA, RNT/privacy compliance as applicable, real contact information, and production lead notification handling.
