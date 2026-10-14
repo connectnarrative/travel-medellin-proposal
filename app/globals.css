@@ -80,3 +80,33 @@ em,i{font-style:normal}h1,h2{font-weight:400;letter-spacing:-.055em}h3{font-weig
   .private-journey-steps article>svg{margin-bottom:25px}
   .partner-strip h2{font-size:clamp(2.55rem,10vw,3.4rem)}
 }
+
+
+/* AUREA V1.0 — approved identity, 2026-10-14. Preserve page structure and admin UI. */
+:root{
+  --background:#171715;--foreground:#F4F0E8;--card:#22221f;--card-foreground:#F4F0E8;
+  --popover:#22221f;--popover-foreground:#F4F0E8;
+  --primary:#BDA16E;--primary-foreground:#171715;
+  --secondary:#302c27;--secondary-foreground:#F4F0E8;
+  --muted:#292824;--muted-foreground:#c4bfb5;
+  --accent:#414638;--accent-foreground:#F4F0E8;
+  --border:#48443b;--input:#4c463d;--ring:#BDA16E;
+  --gold:#BDA16E;--ink:#171715;--cream:#F4F0E8;
+}
+body,header{background:#171715;color:#F4F0E8}
+h1,h2,.category-tile h3,.listing-card h3,.footer-top p{font-family:'Playfair Display',Georgia,'Times New Roman',serif;font-style:normal}
+h1,h2{letter-spacing:-.045em}
+em,i{font-style:normal}
+.brand .aurea-brand-logo{display:block;width:238px;height:auto;max-height:73px;object-fit:contain;flex-shrink:0}
+.footer-top .brand .aurea-brand-logo{width:224px}
+.hero-editorial .hero-copy h1{font-family:'Playfair Display',Georgia,'Times New Roman',serif;font-weight:400;letter-spacing:-.047em}
+.hero-editorial .hero-copy em,.luxe-story-copy em{font-style:normal}
+.hero-editorial .hero-shade{background:linear-gradient(90deg,rgba(18,17,15,.9) 0%,rgba(20,18,16,.62) 48%,rgba(22,19,16,.18) 100%),linear-gradient(0deg,rgba(20,18,16,.83),transparent 48%)}
+.button.gold{background:#BDA16E;border-color:#BDA16E;color:#171715}
+.button.gold:hover{background:#d6bd91;border-color:#d6bd91;color:#171715}
+.eyebrow,.tile-explore svg,.category-index svg{color:#BDA16E}
+@media(max-width:760px){
+  .brand .aurea-brand-logo{width:181px;max-height:58px;max-width:57vw}
+  .footer-top .brand .aurea-brand-logo{width:166px}
+  .hero-editorial .hero-copy h1{font-size:clamp(2.55rem,9.6vw,4.6rem);letter-spacing:-.048em}
+}
