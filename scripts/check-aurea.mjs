@@ -1,0 +1,30 @@
+import assert from 'node:assert/strict';
+import {readFileSync,existsSync} from 'node:fs';
+
+function read(file){assert(existsSync(file), `Missing ${file}`);return readFileSync(file,'utf8')}
+const logo=read('public/brand/aurea-logo-light.svg');
+assert(logo.includes('AUREA')&&logo.includes('PRIVATE ACCESS'));
+const home=read('app/page.tsx');
+assert(home.includes('href="/concierge"'));
+assert(home.includes('href="/partners"'));
+const navigation=read('app/ui.tsx');
+assert(navigation.includes('href="/concierge"'));
+assert(navigation.includes('href="/partners"'));
+assert(!navigation.includes('href="/membresia"'));
+const trip=read('app/concierge/page.tsx');
+const partners=read('app/partners/page.tsx');
+assert(trip.includes('<RequestForm kind="trip"/>'));
+assert(partners.includes('<RequestForm kind="partner"/>'));
+const form=read('app/discovery.tsx');
+assert(form.includes("required={kind==='trip'&&!selected.length}"));
+assert(form.includes('AUREA'));
+const lead=read('app/api/leads/route.ts');
+assert(lead.includes('d.interests'));
+assert(lead.includes('d.budget'));
+assert(lead.includes('AUREA Private Access'));
+assert(!lead.includes('Añade al menos una selección válida a Mi Llave.'));
+const routes=read('app/[...slug]/page.tsx');
+assert(routes.includes("redirect('/partners')"));
+const metadata=read('app/layout.tsx');
+assert(metadata.includes('AUREA Private Access'));
+console.log('AUREA source smoke checks passed: branding, routes, forms and backend payloads.');
