@@ -1,45 +1,44 @@
-import { categories as seedCategories, listings as seedListings } from './seed';
-import type { Category, Listing, SiteSettings } from './types';
-
-// Vercel presentation mode: display the existing approved demonstration dataset.
-// The original Cloudflare D1/R2-powered CMS is preserved in the original repository
-// https://github.com/connectnarrative/travel-life-medellin
-// Persistent CMS and lead storage must be migrated before taking real submissions.
-export const database = (): D1Database => {
-  throw new Error('Persistent CMS database is not configured for this Vercel demonstration.');
-};
-
-export async function admin(): Promise<boolean> {
-  // No administrative writes or privileges until real Vercel authentication and storage exist.
-  return false;
+import { env } from 'cloudflare:workers';
+import { getChatGPTUser } from '@/app/chatgpt-auth';
+import {categories as seedCategories,listings as seedListings} from './seed';
+import {editorialListings} from './editorial';
+import type {Category,Listing} from './types';
+export const database=()=>{if(!env.DB)throw new Error('Database unavailable');return env.DB};
+export async function admin(){const u=await getChatGPTUser();const allowed=((env as unknown as Record<string,string>).ADMIN_EMAILS||'fkgalejandro@gmail.com').toLowerCase().split(',').map(s=>s.trim());return !!u&&allowed.includes(u.email.toLowerCase());}
+export async function seed(){
+  const db=database();
+  // Keep previously created CMS records. Seed records are added only once.
+  if(!await db.prepare("SELECT id FROM settings WHERE id='initialized'").first()){
+    await db.batch([
+      ...seedCategories.map(c=>db.prepare('INSERT OR IGNORE INTO categories (id,slug,data) VALUES (?,?,?)').bind(c.id,c.slug,JSON.stringify(c))),
+      ...seedListings.map(l=>db.prepare('INSERT OR IGNORE INTO listings (id,slug,category,status,relationship,data,updated) VALUES (?,?,?,?,?,?,?)').bind(l.id,l.slug,l.category,l.status,l.relationship,JSON.stringify(l),new Date().toISOString())),
+      db.prepare("INSERT OR IGNORE INTO settings (id,data) VALUES ('initialized','true')")
+    ]);
+  }
+  // Idempotent content migration for existing deployments, without overwriting CMS edits.
+  if(!await db.prepare("SELECT id FROM settings WHERE id='editorial-luxury-v1'").first()){
+    await db.batch([
+      ...editorialListings.map(l=>db.prepare('INSERT OR IGNORE INTO listings (id,slug,category,status,relationship,data,updated) VALUES (?,?,?,?,?,?,?)').bind(l.id,l.slug,l.category,l.status,l.relationship,JSON.stringify(l),new Date().toISOString())),
+      db.prepare("INSERT OR IGNORE INTO settings (id,data) VALUES ('editorial-luxury-v1','true')")
+    ]);
+  }
 }
-
-export async function seed(): Promise<void> {}
-
-export async function content(all = false): Promise<{categories: Category[]; listings: Listing[]}> {
-  const categories = [...seedCategories].sort((a, b) => a.order - b.order);
-  const listings = seedListings
-    .filter(l => all || (['published', 'demo'].includes(l.status) &&
-      !['paused', 'archived'].includes(l.relationship)))
-    .sort((a, b) => a.priority - b.priority);
-  return { categories, listings };
-}
-
-export const origin = 'https://travel-medellin-proposal-fkgalejandro-9911s-projects.vercel.app';
-
-export function sameOrigin(req: Request): boolean {
-  const requestOrigin = req.headers.get('origin');
-  return !requestOrigin || requestOrigin === new URL(req.url).origin || requestOrigin === origin;
-}
-
-export async function siteSettings(): Promise<SiteSettings> {
+export async function content(all=false):Promise<{categories:Category[];listings:Listing[]}>{
+  await seed();
+  const db=database();
+  const [c,l]=await Promise.all([
+    db.prepare('SELECT data FROM categories').all<{data:string}>(),
+    db.prepare(all?'SELECT data FROM listings':"SELECT data FROM listings WHERE status IN ('published','demo') AND relationship NOT IN ('paused','archived')").all<{data:string}>()
+  ]);
   return {
-    heroImage: '/images/hero.webp',
-    heroAlt: 'El valle de Medellín al atardecer',
-    coffeeImage: '/images/coffee.webp',
-    coffeeAlt: 'Una taza de café colombiano',
-    logoUrl: '',
-    whatsapp: '',
-    seoLive: false,
+    categories:c.results.map(x=>JSON.parse(x.data)).sort((a,b)=>a.order-b.order),
+    // Keep the older unconfirmed business prospects editable in CMS, but do not
+    // present their names as partners to travelers. New concepts are clearly demos.
+    listings:l.results.map(x=>JSON.parse(x.data) as Listing)
+      .filter(l=>all||!(l.status==='demo'&&l.relationship==='prospect'))
+      .sort((a,b)=>a.priority-b.priority)
   };
 }
+export const origin='https://travel-life-medellin.pureliveguy.chatgpt.site';
+export function sameOrigin(req:Request){const o=req.headers.get('origin');return !o||o===new URL(req.url).origin||o===origin;}
+export async function siteSettings():Promise<import('./types').SiteSettings>{await seed();const row=await database().prepare("SELECT data FROM settings WHERE id='site'").first<{data:string}>();return row?JSON.parse(row.data):{heroImage:'/images/hero.webp',heroAlt:'El valle de Medellín al atardecer',coffeeImage:'/images/coffee.webp',coffeeAlt:'Una taza de café colombiano',logoUrl:'',whatsapp:'',seoLive:false};}
