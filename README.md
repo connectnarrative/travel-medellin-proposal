@@ -8,7 +8,7 @@ Working private presentation prototype with server-rendered category/detail page
 - `pnpm db:generate` generates schema migrations. The hosting workflow applies them to D1 before release.
 - D1 (`DB`) stores categories, public listing JSON, separate private commercial records, leads and site settings. R2 (`BUCKET`) stores media. Data access is server-only, with bound SQL parameters.
 - This deployment uses Cloudflare D1/R2 and platform sign-in, **not Supabase**. Money OS was not modified. Moving to Vercel requires replacing the D1/R2/auth adapters, for example with the originally preferred Supabase stack; this is not a zero-config Vercel build.
-- First content read idempotently imports 55 prospect/concept listing records and 10 categories. Seed content is maintained in `lib/seed.ts`; subsequent CMS edits are authoritative. No production customer data is bundled.
+- First content read idempotently imports 55 original prospect/concept records and 10 categories. A separate `editorial-luxury-v1` migration adds 30 bilingual luxury inspiration profiles from `lib/editorial.ts`, including on databases that were initialized previously. The public preview excludes unconfirmed named prospects, while all existing prospect records and CMS edits remain available to staff. Seed content is maintained in `lib/seed.ts`; subsequent CMS edits are authoritative. No production customer data is bundled.
 
 ## CMS
 Open `/admin`, sign in through the hosting platform with `fkgalejandro@gmail.com`.
@@ -23,7 +23,7 @@ Tabs: Perfiles, Categorías, Solicitudes, Marca e inicio.
 - Site settings include official logo, hero/coffee media, concierge WhatsApp and launch indexing.
 
 ## Content and launch
-The official ornate key logo was not supplied. A temporary wordmark and standard key icon are used. Replace it in Marca e inicio. Photography is licensed concept imagery, not verified imagery of the named businesses. PHOTO-CREDITS.json records sources and licenses.
+The official ornate key logo was not supplied. A temporary wordmark and standard key icon are used. Replace it in Marca e inicio. Photography is existing licensed concept imagery reused for the presentation, not verified imagery of a named business or a confirmed offering. PHOTO-CREDITS.json records sources and licenses.
 
 Client WhatsApp is intentionally blank. Add the number (digits including country code) to enable a structured, user-initiated WhatsApp handoff after a successful database save. Forms do not send email notifications automatically and do not confirm bookings.
 
