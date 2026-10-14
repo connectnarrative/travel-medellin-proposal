@@ -20,7 +20,7 @@ export default async function Home(){
       <div className="hero-shade"/>
       <div className="hero-coordinate">6°14′41″N 75°34′29″W <span>COLOMBIA</span></div>
       <div className="hero-copy">
-        <div className="eyebrow"><span/><T es="MEDELLÍN, ELEVADO" en="MEDELLÍN, ELEVATED"/></div>
+        <div className="eyebrow"><span/><T es="ACCESO PRIVADO A LO EXTRAORDINARIO" en="PRIVATE ACCESS TO THE EXTRAORDINARY"/></div>
         <h1><T es="Una ciudad." en="One city."/><br/><em><T es="Infinitas posibilidades." en="Endless possibilities."/></em></h1>
         <p><T es="Estancias extraordinarias, mesas memorables, noches únicas y experiencias privadas. Descubre la ciudad desde otra perspectiva." en="Extraordinary stays, memorable tables, remarkable nights and private experiences. See Medellín from another perspective."/></p>
         <div className="hero-buttons">
@@ -28,7 +28,7 @@ export default async function Home(){
           <a href="/mi-llave" className="text-link"><KeyRound size={17}/><T es="DISEÑAR MI VIAJE" en="DESIGN MY TRIP"/></a>
         </div>
       </div>
-      <div className="hero-bottom"><span><T es="UNA SELECCIÓN EDITORIAL" en="AN EDITORIAL COLLECTION"/></span><span className="scroll-label"><T es="DESCUBRE MÁS" en="DISCOVER MORE"/><i/></span><span>TRAVEL & LIFE MEDELLÍN</span></div>
+      <div className="hero-bottom"><span><T es="UNA SELECCIÓN EDITORIAL" en="AN EDITORIAL COLLECTION"/></span><span className="scroll-label"><T es="DESCUBRE MÁS" en="DISCOVER MORE"/><i/></span><span>AUREA · PRIVATE ACCESS</span></div>
     </section>
 
     <section className="collection section" id="coleccion">
@@ -62,7 +62,7 @@ export default async function Home(){
         <div><span className="eyebrow"><T es="EL ARTE DE ELEGIR" en="THE ART OF CHOOSING"/></span><h2><T es="Ideas para un" en="Ideas for an"/><br/><em><T es="viaje inolvidable." en="unforgettable trip."/></em></h2></div>
         <a className="text-link" href="/coleccion"><T es="TODA LA COLECCIÓN" en="THE FULL COLLECTION"/><ArrowUpRight size={17}/></a>
       </div>
-      <p className="demo-note"><T es="Una primera mirada al universo Travel & Life. Son conceptos editoriales de muestra, no proveedores confirmados." en="A first look at the Travel & Life world. These are editorial preview concepts, not confirmed suppliers."/></p>
+      <p className="demo-note"><T es="Una primera mirada al universo AUREA. Son conceptos editoriales de muestra, no proveedores confirmados." en="A first look at the AUREA world. These are editorial preview concepts, not confirmed suppliers."/></p>
       <div className="listing-grid">
         {curated.map(l=><article className="listing-card" key={l.id}>
           <a href={'/coleccion/'+l.slug}><div className="listing-photo"><img src={l.image} loading="lazy" alt={l.alt}/><span><T es="CONCEPTO" en="CONCEPT"/></span></div>
