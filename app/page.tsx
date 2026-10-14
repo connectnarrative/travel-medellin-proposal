@@ -25,7 +25,7 @@ export default async function Home(){
         <p><T es="Estancias extraordinarias, mesas memorables, noches únicas y experiencias privadas. Descubre la ciudad desde otra perspectiva." en="Extraordinary stays, memorable tables, remarkable nights and private experiences. See Medellín from another perspective."/></p>
         <div className="hero-buttons">
           <a href="#coleccion" className="button gold"><T es="EXPLORAR LA COLECCIÓN" en="EXPLORE THE COLLECTION"/> <ArrowUpRight size={16}/></a>
-          <a href="/mi-llave" className="text-link"><KeyRound size={17}/><T es="DISEÑAR MI VIAJE" en="DESIGN MY TRIP"/></a>
+          <a href="/concierge" className="text-link"><KeyRound size={17}/><T es="CONCIERGE PRIVADO" en="PRIVATE CONCIERGE"/></a>
         </div>
       </div>
       <div className="hero-bottom"><span><T es="UNA SELECCIÓN EDITORIAL" en="AN EDITORIAL COLLECTION"/></span><span className="scroll-label"><T es="DESCUBRE MÁS" en="DISCOVER MORE"/><i/></span><span>AUREA · PRIVATE ACCESS</span></div>
@@ -84,7 +84,7 @@ export default async function Home(){
       <div className="private-journey-intro"><span className="eyebrow">PERSONAL. PRIVATE. CONSIDERED.</span>
         <h2><T es="El viaje comienza" en="Your journey begins"/><br/><em><T es="contigo." en="with you."/></em></h2>
         <p><T es="No necesitas tenerlo todo decidido. Guarda lo que te inspira y comparte tu idea de viaje. Nuestro equipo puede ayudarte a convertirla en una solicitud personalizada." en="You don't need every detail figured out. Save what inspires you and share the trip you have in mind. Our team can help turn it into a tailored inquiry."/></p>
-        <a href="/mi-llave" className="button gold"><KeyRound size={17}/><T es="EMPEZAR MI ITINERARIO" en="START MY ITINERARY"/></a>
+        <a href="/concierge" className="button gold"><KeyRound size={17}/><T es="DISEÑAR MI EXPERIENCIA" en="DESIGN MY EXPERIENCE"/></a>
       </div>
       <div className="private-journey-steps">
         <article><Compass size={25}/><span>01</span><h3><T es="Descubre" en="Discover"/></h3><p><T es="Explora la inspiración por categoría y encuentra tu estilo." en="Explore by category and find your style."/></p></article>
@@ -97,7 +97,7 @@ export default async function Home(){
       <span className="eyebrow">A MORE CONSIDERED NETWORK</span>
       <h2><T es="Tu propuesta merece" en="Your offering deserves"/><br/><em><T es="la audiencia correcta." en="the right audience."/></em></h2>
       <p><T es="¿Ofreces una experiencia, un espacio o un servicio excepcional en Medellín? Conversemos sobre una posible colaboración." en="Have an exceptional space, service or experience in Medellín? Let's explore a potential collaboration."/></p>
-      <a className="button" href="/membresia"><HeartHandshake size={17}/><T es="PRESENTA TU MARCA" en="INTRODUCE YOUR BRAND"/></a>
+      <a className="button" href="/partners"><HeartHandshake size={17}/><T es="PRESENTA TU MARCA" en="INTRODUCE YOUR BRAND"/></a>
     </section>
   </main>;
 }
