@@ -1,4 +1,4 @@
-# Travel & Life Medellín
+# AUREA Private Access — Medellín (private presentation)
 
 Working private presentation prototype with server-rendered category/detail pages, ES/EN client presentation, Mi Llave browser persistence, database-backed trip and partner inquiries, authenticated CMS, and persistent media storage.
 
@@ -23,7 +23,7 @@ Tabs: Perfiles, Categorías, Solicitudes, Marca e inicio.
 - Site settings include official logo, hero/coffee media, concierge WhatsApp and launch indexing.
 
 ## Content and launch
-The official ornate key logo was not supplied. A temporary wordmark and standard key icon are used. Replace it in Marca e inicio. Photography is existing licensed concept imagery reused for the presentation, not verified imagery of a named business or a confirmed offering. PHOTO-CREDITS.json records sources and licenses.
+The AUREA V1.0 creative identity is approved and documented in `brand/AUREA_BRAND_LOCK.md`. Public-facing preview branding uses scalable SVG interpretations in `public/brand/` and an AUREA emblem favicon. Original moodboard reference images are preserved in the approved downloadable identity kit. Update CMS-provided assets only with AUREA-approved media. Photography is existing licensed concept imagery reused for the presentation, not verified imagery of a named business or a confirmed offering. PHOTO-CREDITS.json records sources and licenses.
 
 Client WhatsApp is intentionally blank. Add the number (digits including country code) to enable a structured, user-initiated WhatsApp handoff after a successful database save. Forms do not send email notifications automatically and do not confirm bookings.
 
@@ -38,7 +38,7 @@ Verified: production build; server rendering and all ten category routes; listin
 Not verified in this environment: browser click-through, desktop/mobile screenshots, reduced-motion behavior in a browser, cross-reload browser storage, real platform sign-in end-to-end, production database readback and WebMCP runtime registration. CSS has responsive layouts, visible focus and reduced-motion handling; these require a browser acceptance pass before public launch. WebMCP exposes read-only local Mi Llave state when supported.
 
 ## Next production steps
-1. Supply official logo, authorized partner media, confirmed listings and client WhatsApp.
+1. Validate the AUREA trademark/domain/handle, obtain final production-reviewed logo artwork, licensed partner media, confirmed listings and a real concierge WhatsApp.
 2. Add staff emails to the server allowlist and grant corresponding site access.
 3. Run desktop/mobile browser acceptance and a real signed-in CMS + inquiry test on the deployment.
 4. Approve privacy/retention policy, configure lead notifications, and decide whether to migrate to Supabase/Vercel.
