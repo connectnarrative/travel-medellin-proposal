@@ -24,5 +24,15 @@ export async function siteSettings():Promise<SiteSettings>{
 
 // The production CMS must not be exposed on an unauthenticated demo host.
 export async function admin():Promise<boolean>{return false;}
-export function database():never{throw new Error('Presentation-only host: persistent database unavailable');}
+type PreviewStatement={
+  bind:(...params:unknown[])=>PreviewStatement;
+  first:<T=Record<string,unknown>>()=>Promise<T|null>;
+  all:<T=Record<string,unknown>>()=>Promise<{results:T[]}>;
+  run:()=>Promise<unknown>;
+};
+type PreviewDatabase={
+  prepare:(sql:string)=>PreviewStatement;
+  batch:(queries:PreviewStatement[])=>Promise<unknown>;
+};
+export function database():PreviewDatabase{throw new Error('Presentation-only host: persistent database unavailable');}
 export function sameOrigin(req:Request):boolean{const o=req.headers.get('origin');return !o||o===new URL(req.url).origin;}
