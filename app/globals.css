@@ -156,3 +156,7 @@ em,i{font-style:normal}
 .aurea-insiders-content .text-link{margin-top:25px}
 .aurea-insiders-content .demo-note{font-size:12px}
 @media(max-width:760px){.aurea-insiders{grid-template-columns:1fr;gap:35px}.aurea-insiders-photo,.aurea-insiders-photo img{min-height:300px;height:330px}}
+
+/* Read-only inquiry demo — explicitly no storage, no false booking confirmation. */
+.aurea-preview-notice{padding:18px 20px;border-left:2px solid #BDA16E;background:#2c2a24;color:#e3d7bc;font-size:13px;line-height:1.75;margin:0 0 30px}
+.aurea-preview-brief{padding:25px;background:#161715;color:#f4f0e8;border:1px solid #51493b;white-space:pre-wrap;overflow-wrap:anywhere;font-family:ui-monospace,SFMono-Regular,monospace;font-size:13px;line-height:1.8;margin:20px 0 30px}
