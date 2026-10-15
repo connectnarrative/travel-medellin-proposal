@@ -1,44 +1,28 @@
-import { env } from 'cloudflare:workers';
-import { getChatGPTUser } from '@/app/chatgpt-auth';
-import {categories as seedCategories,listings as seedListings} from './seed';
+import {categories as seededCategories} from './seed';
 import {editorialListings} from './editorial';
-import type {Category,Listing} from './types';
-export const database=()=>{if(!env.DB)throw new Error('Database unavailable');return env.DB};
-export async function admin(){const u=await getChatGPTUser();const allowed=((env as unknown as Record<string,string>).ADMIN_EMAILS||'fkgalejandro@gmail.com').toLowerCase().split(',').map(s=>s.trim());return !!u&&allowed.includes(u.email.toLowerCase());}
-export async function seed(){
-  const db=database();
-  // Keep previously created CMS records. Seed records are added only once.
-  if(!await db.prepare("SELECT id FROM settings WHERE id='initialized'").first()){
-    await db.batch([
-      ...seedCategories.map(c=>db.prepare('INSERT OR IGNORE INTO categories (id,slug,data) VALUES (?,?,?)').bind(c.id,c.slug,JSON.stringify(c))),
-      ...seedListings.map(l=>db.prepare('INSERT OR IGNORE INTO listings (id,slug,category,status,relationship,data,updated) VALUES (?,?,?,?,?,?,?)').bind(l.id,l.slug,l.category,l.status,l.relationship,JSON.stringify(l),new Date().toISOString())),
-      db.prepare("INSERT OR IGNORE INTO settings (id,data) VALUES ('initialized','true')")
-    ]);
-  }
-  // Idempotent content migration for existing deployments, without overwriting CMS edits.
-  if(!await db.prepare("SELECT id FROM settings WHERE id='editorial-luxury-v1'").first()){
-    await db.batch([
-      ...editorialListings.map(l=>db.prepare('INSERT OR IGNORE INTO listings (id,slug,category,status,relationship,data,updated) VALUES (?,?,?,?,?,?,?)').bind(l.id,l.slug,l.category,l.status,l.relationship,JSON.stringify(l),new Date().toISOString())),
-      db.prepare("INSERT OR IGNORE INTO settings (id,data) VALUES ('editorial-luxury-v1','true')")
-    ]);
-  }
+import type {Category,Listing,SiteSettings} from './types';
+
+/**
+ * Vercel presentation adapter, intentionally read-only and independently deployable.
+ * The existing Cloudflare-backed main website retains its production database,
+ * private records and CMS. No privileged API keys are bundled in this demo.
+ */
+export const origin='https://travel-medellin-proposal-fkgalejandro-9911s-projects.vercel.app';
+
+export async function content(all=false):Promise<{categories:Category[];listings:Listing[]}> {
+  void all;
+  return {categories:seededCategories,listings:editorialListings};
 }
-export async function content(all=false):Promise<{categories:Category[];listings:Listing[]}>{
-  await seed();
-  const db=database();
-  const [c,l]=await Promise.all([
-    db.prepare('SELECT data FROM categories').all<{data:string}>(),
-    db.prepare(all?'SELECT data FROM listings':"SELECT data FROM listings WHERE status IN ('published','demo') AND relationship NOT IN ('paused','archived')").all<{data:string}>()
-  ]);
+
+export async function siteSettings():Promise<SiteSettings>{
   return {
-    categories:c.results.map(x=>JSON.parse(x.data)).sort((a,b)=>a.order-b.order),
-    // Keep the older unconfirmed business prospects editable in CMS, but do not
-    // present their names as partners to travelers. New concepts are clearly demos.
-    listings:l.results.map(x=>JSON.parse(x.data) as Listing)
-      .filter(l=>all||!(l.status==='demo'&&l.relationship==='prospect'))
-      .sort((a,b)=>a.priority-b.priority)
+    heroImage:'/images/hero.webp',heroAlt:'El valle de Medellín al atardecer',
+    coffeeImage:'/images/coffee.webp',coffeeAlt:'Una taza de café colombiano',
+    logoUrl:'/brand/aurea-logo-light.svg',whatsapp:'',seoLive:false
   };
 }
-export const origin='https://travel-life-medellin.pureliveguy.chatgpt.site';
-export function sameOrigin(req:Request){const o=req.headers.get('origin');return !o||o===new URL(req.url).origin||o===origin;}
-export async function siteSettings():Promise<import('./types').SiteSettings>{await seed();const row=await database().prepare("SELECT data FROM settings WHERE id='site'").first<{data:string}>();return row?JSON.parse(row.data):{heroImage:'/images/hero.webp',heroAlt:'El valle de Medellín al atardecer',coffeeImage:'/images/coffee.webp',coffeeAlt:'Una taza de café colombiano',logoUrl:'',whatsapp:'',seoLive:false};}
+
+// The production CMS must not be exposed on an unauthenticated demo host.
+export async function admin():Promise<boolean>{return false;}
+export function database():never{throw new Error('Presentation-only host: persistent database unavailable');}
+export function sameOrigin(req:Request):boolean{const o=req.headers.get('origin');return !o||o===new URL(req.url).origin;}
