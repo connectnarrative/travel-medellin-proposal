@@ -1,2 +1,3 @@
 'use client';
-export default function ErrorPage({reset}:{reset:()=>void}){return <main id="main" className="page"><h1>Un momento,<br/><em>por favor.</em></h1><p>No pudimos cargar esta página. Tu llave sigue guardada en este dispositivo.</p><button className="button gold" onClick={reset}>VOLVER A INTENTAR</button></main>}
+import {T} from './ui';
+export default function ErrorPage({reset}:{reset:()=>void}){return <main id="main" className="page"><h1><T es="Un momento," en="One moment,"/><br/><T es="por favor." en="please."/></h1><p><T es="No pudimos cargar esta página. Tus selecciones de My AUREA permanecen en este navegador." en="We couldn’t load this page. Your My AUREA selections remain in this browser."/></p><button className="button gold" onClick={reset}><T es="VOLVER A INTENTAR" en="TRY AGAIN"/></button></main>}

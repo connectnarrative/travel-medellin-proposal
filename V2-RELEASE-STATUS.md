@@ -32,3 +32,9 @@
 
 ## Release decision
 Feature branch is committed locally. Publishing it was blocked twice by automatic approval review: the reviewer requires direct authorization to disclose source to the existing public GitHub repository. The outgoing-change scan found no private contact values, credentials or environment files (only qa@example.invalid in the test). No Vercel preview has been created for these changes. Once directly authorized, push the feature branch and create a Vercel PREVIEW deployment. Do not merge to production until the brief's visual QA and launch requirements are met, or the user explicitly approves a narrower presentation-only release with the limitations visible.
+
+
+## Publication update — user approval received
+The user explicitly approved publishing in the follow-up turn. GitHub commit cb71347e79c44353456ff8c60c5f369b798428ba was published to feat/aurea-v2-partner-proposal using the connected GitHub app (the terminal has no GitHub write credentials). The remote tree exactly matched the locally built tree. Vercel deployment dpl_EUYyQzTVz2ShmaqGTkgu1XaDc2E3 reached READY as a preview.
+
+HTTP checks passed for all 19 public routes, all linked listing-detail pages and noindex. Next.js streamed not-found responses use status 200 with noindex, as documented by Next.js; the test now validates the branded error UI and noindex. Legacy branding on loading/404 screens was corrected and error pages made bilingual. Browser interaction/visual QA remains unverified. Operational blockers above remain in effect.

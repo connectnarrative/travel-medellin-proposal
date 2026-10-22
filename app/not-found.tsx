@@ -1,1 +1,2 @@
-export default function NotFound(){return <main id="main" className="page"><span className="eyebrow">404 / TRAVEL & LIFE</span><h1>Otra puerta<br/><em>te espera.</em></h1><p>No encontramos esta selección.</p><a className="button gold" href="/coleccion">EXPLORAR LA COLECCIÓN</a></main>}
+import {T} from './ui';
+export default function NotFound(){return <main id="main" className="page"><span className="eyebrow">404 / AUREA</span><h1><T es="Otra puerta" en="Another door"/><br/><T es="te espera." en="awaits."/></h1><p><T es="No encontramos esta selección." en="We couldn’t find this selection."/></p><a className="button gold" href="/coleccion"><T es="EXPLORAR LA COLECCIÓN" en="EXPLORE THE COLLECTION"/></a></main>}
