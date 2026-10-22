@@ -1,113 +1,33 @@
-import {content,siteSettings} from '@/lib/server';
+import {content} from '@/lib/server';
 import {Intro,T,Save,Reveal} from './ui';
-import {ArrowUpRight,KeyRound,Compass,CalendarDays,HeartHandshake} from 'lucide-react';
+import {ArrowUpRight,ArrowDown,KeyRound} from 'lucide-react';
+import {Neighborhoods} from './v2-interactions';
 export const dynamic='force-dynamic';
-
 export default async function Home(){
-  let data;
-  try{data=await content()}catch{
-    return <main id="main" className="page"><h1>Volvemos en un momento.</h1><p>La colección no está disponible. Intenta de nuevo.</p></main>;
-  }
-  const {categories,listings}=data;
-  const settings=await siteSettings();
-  const primary=categories.filter(c=>['stay','dine','night'].includes(c.id));
-  const more=categories.filter(c=>!['stay','dine','night'].includes(c.id));
-  const curated=listings.filter(l=>l.featured&&['stay','live','dine','night','explore','move'].includes(l.category)).slice(0,6);
-  return <main id="main">
-    <Intro/>
-    <section className="hero hero-editorial">
-      <img src={settings.heroImage} alt={settings.heroAlt} fetchPriority="high"/>
-      <div className="hero-shade"/>
-      <div className="hero-coordinate">6°14′41″N 75°34′29″W <span>COLOMBIA</span></div>
-      <div className="hero-copy">
-        <div className="eyebrow"><span/><T es="ACCESO PRIVADO A LO EXTRAORDINARIO" en="PRIVATE ACCESS TO THE EXTRAORDINARY"/></div>
-        <h1><T es="Una ciudad." en="One city."/><br/><em><T es="Infinitas posibilidades." en="Endless possibilities."/></em></h1>
-        <p><T es="Estancias extraordinarias, mesas memorables, noches únicas y experiencias privadas. Descubre la ciudad desde otra perspectiva." en="Extraordinary stays, memorable tables, remarkable nights and private experiences. See Medellín from another perspective."/></p>
-        <div className="hero-buttons">
-          <a href="#coleccion" className="button gold"><T es="EXPLORAR LA COLECCIÓN" en="EXPLORE THE COLLECTION"/> <ArrowUpRight size={16}/></a>
-          <a href="/concierge" className="text-link"><KeyRound size={17}/><T es="CONCIERGE PRIVADO" en="PRIVATE CONCIERGE"/></a>
-        </div>
-      </div>
-      <div className="hero-bottom"><span><T es="UNA SELECCIÓN EDITORIAL" en="AN EDITORIAL COLLECTION"/></span><span className="scroll-label"><T es="DESCUBRE MÁS" en="DISCOVER MORE"/><i/></span><span>AUREA · PRIVATE ACCESS</span></div>
-    </section>
-
-    <section className="collection section" id="coleccion">
-      <Reveal className="section-top">
-        <div><span className="eyebrow">THE MEDELLÍN EDIT</span><h2><T es="Lo excepcional" en="The exceptional"/><br/><em><T es="está en los detalles." en="is in the details."/></em></h2></div>
-        <p><T es="Imagina tu Medellín ideal. Explora categorías creadas para inspirar experiencias que nuestro equipo podrá personalizar y verificar." en="Imagine your ideal Medellín. Explore curated themes to inspire experiences our team can tailor and verify."/></p>
-      </Reveal>
-      <div className="editorial-grid">
-        {primary.map((c,i)=><a className={'category-tile tile-'+i} href={'/'+c.slug} key={c.id}>
-          <img src={c.image} alt={c.name+' · imagen conceptual'} loading="lazy"/>
-          <span className="tile-number">0{i+1}</span>
-          <div><span className="eyebrow"><T es={c.name} en={c.en}/></span><h3>{c.label}</h3><span className="tile-explore"><T es="DESCUBRIR" en="DISCOVER"/><ArrowUpRight size={18}/></span></div>
-        </a>)}
-      </div>
-      <div className="category-index">{more.map(c=><a href={'/'+c.slug} key={c.id}><span>{c.label}</span><small><T es={c.name} en={c.en}/></small><ArrowUpRight size={17}/></a>)}</div>
-      <p className="demo-note"><T es="Colección de inspiración: fotografías ilustrativas y propuestas conceptuales. Ninguna opción representa una reserva, propiedad o colaboración confirmada." en="Inspiration collection: illustrative photography and conceptual experiences. No option represents a confirmed booking, property or partnership."/></p>
-    </section>
-
-    <section className="luxe-story">
-      <div className="luxe-story-image"><img src="/images/guatape.webp" alt="Paisajes de Guatapé, Antioquia" loading="lazy"/><span>ANTIOQUIA / BEYOND THE CITY</span></div>
-      <div className="luxe-story-copy">
-        <span className="eyebrow"><T es="MÁS ALLÁ DE LO CONVENCIONAL" en="BEYOND THE EXPECTED"/></span>
-        <h2><T es="El lujo es" en="Luxury is"/><br/><em><T es="tener opciones." en="having options."/></em></h2>
-        <p><T es="Una tarde entre montañas. Una mesa escondida. El primer brindis sobre la ciudad. No se trata de verlo todo: se trata de descubrir lo que importa para ti." en="An afternoon in the mountains. An intimate dinner. A first toast above the city. It's not about seeing everything; it's about discovering what matters to you."/></p>
-        <a className="text-link" href="/experiencias-medellin"><T es="EXPLORAR EXPERIENCIAS" en="EXPLORE EXPERIENCES"/><ArrowUpRight size={18}/></a>
-      </div>
-    </section>
-
-    <section className="section selected">
-      <div className="section-top">
-        <div><span className="eyebrow"><T es="EL ARTE DE ELEGIR" en="THE ART OF CHOOSING"/></span><h2><T es="Ideas para un" en="Ideas for an"/><br/><em><T es="viaje inolvidable." en="unforgettable trip."/></em></h2></div>
-        <a className="text-link" href="/coleccion"><T es="TODA LA COLECCIÓN" en="THE FULL COLLECTION"/><ArrowUpRight size={17}/></a>
-      </div>
-      <p className="demo-note"><T es="Una primera mirada al universo AUREA. Son conceptos editoriales de muestra, no proveedores confirmados." en="A first look at the AUREA world. These are editorial preview concepts, not confirmed suppliers."/></p>
-      <div className="listing-grid">
-        {curated.map(l=><article className="listing-card" key={l.id}>
-          <a href={'/coleccion/'+l.slug}><div className="listing-photo"><img src={l.image} loading="lazy" alt={l.alt}/><span><T es="CONCEPTO" en="CONCEPT"/></span></div>
-          <span className="eyebrow">{categories.find(c=>c.id===l.category)?.label} / EDITORIAL</span><h3>{l.name}</h3>
-          <p className="listing-blurb"><T es={l.tagline} en={l.taglineEn}/></p></a>
-          <Save listing={l}/>
-        </article>)}
-      </div>
-    </section>
-
-    <section className="coffee-story">
-      <img src={settings.coffeeImage} loading="lazy" alt={settings.coffeeAlt}/>
-      <div><span className="eyebrow">THE COFFEE CHAPTER</span><h2><T es="Cada gran día" en="Every great day"/><br/><em><T es="tiene un comienzo." en="has a beginning."/></em></h2>
-      <p><T es="El café es parte del carácter de Colombia. Descubre una forma más pausada y auténtica de acercarte a su cultura." en="Coffee is part of Colombia's character. Discover a slower, more thoughtful way to explore its culture."/></p>
-      <a className="text-link" href="/cafes-medellin"><T es="DESCUBRIR CAFÉS" en="DISCOVER COFFEE"/><ArrowUpRight size={18}/></a></div>
-    </section>
-
-    <section className="aurea-insiders section">
-      <div className="aurea-insiders-photo"><img src="/images/night.webp" alt="Ambiente nocturno de lujo, fotografía ilustrativa" loading="lazy"/></div>
-      <div className="aurea-insiders-content"><span className="eyebrow">LOCAL KNOWLEDGE. PERSONAL SERVICE.</span>
-        <h2><T es="La diferencia es" en="The difference is"/><br/><em><T es="conocer la ciudad." en="knowing the city."/></em></h2>
-        <p><T es="La visión detrás de AUREA reúne más de 15 años de experiencia en concierge y años de trabajo diseñando tours y experiencias en Medellín. Esta experiencia humana guía nuestra manera de ayudar a cada viajero." en="The people behind AUREA bring over 15 years of concierge experience and years of designing Medellín tours and experiences. That real-world knowledge shapes how we approach every guest."/></p>
-        <p className="demo-note"><T es="La colección presentada es todavía conceptual. Cada aliado y experiencia se valida antes de ofrecerse formalmente." en="The collection shown is currently conceptual. Partners and experiences are verified before being formally offered."/></p>
-        <a className="text-link" href="/nosotros"><T es="NUESTRA PERSPECTIVA" en="OUR APPROACH"/><ArrowUpRight size={18}/></a>
-      </div>
-    </section>
-
-    <section className="private-journey section">
-      <div className="private-journey-intro"><span className="eyebrow">PERSONAL. PRIVATE. CONSIDERED.</span>
-        <h2><T es="El viaje comienza" en="Your journey begins"/><br/><em><T es="contigo." en="with you."/></em></h2>
-        <p><T es="No necesitas tenerlo todo decidido. Guarda lo que te inspira y comparte tu idea de viaje. Nuestro equipo puede ayudarte a convertirla en una solicitud personalizada." en="You don't need every detail figured out. Save what inspires you and share the trip you have in mind. Our team can help turn it into a tailored inquiry."/></p>
-        <a href="/concierge" className="button gold"><KeyRound size={17}/><T es="DISEÑAR MI EXPERIENCIA" en="DESIGN MY EXPERIENCE"/></a>
-      </div>
-      <div className="private-journey-steps">
-        <article><Compass size={25}/><span>01</span><h3><T es="Descubre" en="Discover"/></h3><p><T es="Explora la inspiración por categoría y encuentra tu estilo." en="Explore by category and find your style."/></p></article>
-        <article><KeyRound size={25}/><span>02</span><h3><T es="Selecciona" en="Select"/></h3><p><T es="Guarda tus favoritos en Mi Llave y construye tu lista." en="Save favorites to My Key and create your shortlist."/></p></article>
-        <article><CalendarDays size={25}/><span>03</span><h3><T es="Conecta" en="Connect"/></h3><p><T es="Envía tu solicitud. Las opciones reales se verifican antes de cotizar o reservar." en="Send an inquiry. Real options are verified before any quote or reservation."/></p></article>
-      </div>
-    </section>
-
-    <section className="partner-strip">
-      <span className="eyebrow">A MORE CONSIDERED NETWORK</span>
-      <h2><T es="Tu propuesta merece" en="Your offering deserves"/><br/><em><T es="la audiencia correcta." en="the right audience."/></em></h2>
-      <p><T es="¿Ofreces una experiencia, un espacio o un servicio excepcional en Medellín? Conversemos sobre una posible colaboración." en="Have an exceptional space, service or experience in Medellín? Let's explore a potential collaboration."/></p>
-      <a className="button" href="/partners"><HeartHandshake size={17}/><T es="PRESENTA TU MARCA" en="INTRODUCE YOUR BRAND"/></a>
-    </section>
-  </main>;
+ const {categories,listings}=await content();
+ const picks=['live','dine','night','explore'].map(id=>listings.find(l=>l.category===id)!).filter(Boolean);
+ return <main id="main" className="v2-home"><Intro/>
+ <section className="access-hero">
+  <img src="/images/hero.webp" alt="Medellín at sunset, across the Aburrá Valley" fetchPriority="high"/>
+  <div className="access-shade"/>
+  <div className="access-topline"><span>MEDELLÍN · COLOMBIA · BEYOND</span><span>6°14′ N / 75°34′ W</span></div>
+  <div className="access-title"><span className="eyebrow"><T es="ACCESO PRIVADO A LO EXTRAORDINARIO" en="PRIVATE ACCESS TO THE EXTRAORDINARY"/></span><h1><T es="La ciudad tiene" en="Every city has"/><br/><T es="otra puerta." en="another door."/></h1><p><T es="Lugares que te acercan. Experiencias que se quedan. Tu Medellín comienza aquí." en="Places that draw you in. Experiences that stay with you. Your Medellín begins here."/></p></div>
+  <a href="#entrance" className="hero-enter"><span><T es="ENCUENTRA TU ACCESO" en="FIND YOUR WAY IN"/></span><ArrowDown size={18}/></a>
+  <span className="hero-edition">AUREA / THE MEDELLÍN EDIT</span>
+ </section>
+ <section id="entrance" className="entrance-panels">
+  <a href="/coleccion" className="entrance-panel"><img src="/images/hotel.webp" alt="Tropical courtyard, illustrative hospitality photography" loading="lazy"/><div><span className="eyebrow">01 / <T es="PARA VIAJEROS" en="FOR TRAVELERS"/></span><h2><T es="Tu próxima" en="Your next"/><br/><T es="gran historia." en="great story."/></h2><p><T es="Descubre Medellín más allá de lo esperado." en="Discover Medellín beyond the expected."/></p><span className="door-link"><T es="EXPLORAR LA COLECCIÓN" en="EXPLORE THE COLLECTION"/><ArrowUpRight/></span></div></a>
+  <a href="/partners" className="entrance-panel"><img src="/images/dine.webp" alt="An intimate restaurant interior, illustrative photography" loading="lazy"/><div><span className="eyebrow">02 / <T es="PARA ALIADOS" en="FOR HOSPITALITY PARTNERS"/></span><h2><T es="Tu marca." en="Your brand."/><br/><T es="En buena compañía." en="In good company."/></h2><p><T es="Una colección selectiva. Una oportunidad con intención." en="A selective collection. A considered opportunity."/></p><span className="door-link"><T es="FORMAR PARTE DE AUREA" en="PARTNER WITH AUREA"/><ArrowUpRight/></span></div></a>
+ </section>
+ <section className="editorial-intro section ivory"><span className="eyebrow">THE AUREA PERSPECTIVE</span><Reveal><h2><T es="Lo extraordinario no siempre está a la vista. A veces, solo hace falta la conexión correcta." en="The extraordinary isn’t always in plain sight. Sometimes, all it takes is the right connection."/></h2></Reveal><div className="intro-bottom"><img src="/brand/aurea-emblem.svg" alt=""/><p><T es="Reunimos estancias, mesas y experiencias con una mirada personal. Tú eliges lo que te inspira. AUREA ayuda a conectar los detalles." en="We bring a personal perspective to stays, tables and experiences. You choose what inspires you. AUREA helps connect the details."/></p><a href="/nosotros" className="text-link"><T es="NUESTRA MIRADA" en="OUR PERSPECTIVE"/><ArrowUpRight size={16}/></a></div></section>
+ <section className="section collection-v2" id="coleccion"><div className="section-top"><div><span className="eyebrow">11 WAYS INTO THE CITY</span><h2><T es="La colección" en="The AUREA"/><br/><T es="AUREA." en="collection."/></h2></div><p><T es="Desde el lugar donde despiertas hasta la última copa. Encuentra tu forma de vivir Medellín." en="From where you wake up to the last toast. Find your way to experience Medellín."/></p></div>
+ <div className="collection-feature">{categories.filter(c=>['live','dine'].includes(c.id)).map((c,i)=><a className={'collection-window window-'+i} key={c.id} href={'/'+c.slug}><img src={c.image} alt={c.en+' · illustrative photograph'} loading="lazy"/><div><span className="eyebrow">0{i+1} / {c.label}</span><h3><T es={c.name} en={c.en}/></h3><ArrowUpRight/></div></a>)}</div>
+ <div className="collection-rows">{categories.filter(c=>!['live','dine'].includes(c.id)).map((c,i)=><a key={c.id} href={'/'+c.slug}><small>{String(i+3).padStart(2,'0')}</small><h3><T es={c.name} en={c.en}/></h3><span>{c.label}</span><ArrowUpRight size={20}/></a>)}</div><p className="demo-note"><T es="Colección de inspiración. Los perfiles y fotografías son ilustrativos; no representan aliados o disponibilidad confirmados." en="Inspiration collection. Profiles and photography are illustrative; they do not represent confirmed partners or availability."/></p></section>
+ <section className="section ivory curated-edit"><div className="section-top"><div><span className="eyebrow">THE SHORTLIST</span><h2><T es="Menos opciones." en="Fewer choices."/><br/><T es="Más intención." en="More intention."/></h2></div><div><p><T es="Nuestra futura selección Top 10 reunirá hasta diez aliados aprobados por categoría. Hoy, explora la dirección de la colección." en="Our future Top 10 collection will bring together up to ten approved partners per category. Today, explore the direction of the collection."/></p><a className="text-link" href="/coleccion"><T es="EXPLORAR CONCEPTOS" en="EXPLORE CONCEPTS"/><ArrowUpRight size={16}/></a></div></div><div className="shortlist">{picks.map((l,i)=><article key={l.id}><a href={'/coleccion/'+l.slug}><div className="shortlist-photo"><img src={l.image} alt={l.alt} loading="lazy"/><span>0{i+1} / <T es="CONCEPTO" en="CONCEPT"/></span></div><h3><T es={l.name} en={l.nameEn||l.name}/></h3><p><T es={l.tagline} en={l.taglineEn}/></p></a><Save listing={l}/></article>)}</div></section>
+ <section className="beyond-scene"><img src="/images/guatape.webp" alt="Guatapé reservoir and green islands in Antioquia" loading="lazy"/><div><span className="eyebrow">BEYOND THE CITY</span><h2><T es="Cambia de" en="A different"/><br/><T es="perspectiva." en="point of view."/></h2><a href="/experiencias-medellin" className="button"><T es="DESCUBRIR EXPERIENCIAS" en="DISCOVER EXPERIENCES"/><ArrowUpRight size={17}/></a></div></section>
+ <Neighborhoods/>
+ <section className="section personal-concierge"><div className="arch-photo"><img src="/images/coffee.webp" alt="A carefully prepared cup of Colombian coffee" loading="lazy"/></div><div><span className="eyebrow">PRIVATE CONCIERGE</span><h2><T es="El verdadero lujo:" en="The real luxury:"/><br/><T es="sentirte esperado." en="feeling expected."/></h2><p><T es="Una llegada tranquila. Una mesa con intención. Tiempo para lo que importa. Cuéntanos cómo imaginas tu viaje y prepara una solicitud a tu medida." en="A considered arrival. A table with meaning. Time for what matters. Tell us how you imagine your journey and prepare a personal brief."/></p><a href="/concierge" className="button gold"><T es="DISEÑAR MI EXPERIENCIA" en="DESIGN MY EXPERIENCE"/><ArrowUpRight size={17}/></a><a href="/nosotros" className="text-link"><T es="CONOCE NUESTRA VISIÓN" en="MEET OUR PERSPECTIVE"/></a></div></section>
+ <section className="section itinerary-invitation ivory"><KeyRound size={38}/><span className="eyebrow">MY AUREA</span><h2><T es="Tu Medellín." en="Your Medellín."/><br/><T es="Bellamente organizado." en="Beautifully arranged."/></h2><p><T es="Guarda tus favoritos, organiza el orden y añade tus fechas. Sin crear una cuenta." en="Save your favorites, arrange your days and add your dates. No account required."/></p><a className="button dark" href="/my-aurea"><T es="ABRIR MI ITINERARIO" en="OPEN MY ITINERARY"/><ArrowUpRight size={17}/></a></section>
+ <section className="section partnership-close"><span className="eyebrow">AUREA / PARTNER COLLECTION</span><h2><T es="Un lugar para marcas" en="A place for brands"/><br/><T es="que dejan huella." en="that leave an impression."/></h2><div><p><T es="Dos formas de formar parte. Una misma exigencia de calidad. Descubre la propuesta para tu negocio." en="Two ways to belong. One shared standard of care. Discover the proposal for your business."/></p><a href="/partners/proposal" className="button gold"><T es="VER PROPUESTA DE ALIANZA" en="VIEW PARTNER PROPOSAL"/><ArrowUpRight size={17}/></a></div></section>
+ </main>
 }

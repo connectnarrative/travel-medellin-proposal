@@ -18,3 +18,6 @@ This repository contains scalable SVG interpretations of the approved raster con
 
 ## Scope
 The approved brand identity supersedes the old Travel & Life Medellín *public-facing design*, not the underlying content management, protected partner data, inquiry flow, or operating contracts. Preserve the existing database, authorization, CMS and booking workflow when rebranding.
+
+## Commercial direction update — 2026-10-22
+The user authorized two monthly partner offers: Collection at US$200 and Signature at US$500. This supersedes the previous prohibition on publishing unapproved prices. The proposal is non-binding until written terms and activation are agreed. It discloses paid placement, shared premium rotation, the proposed ten-partner category capacity and the absence of guaranteed revenue or demand. Proposed capacity is not represented as a verified scarcity claim. No billing or enrollment is activated by this presentation.

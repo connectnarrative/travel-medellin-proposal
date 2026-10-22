@@ -143,7 +143,7 @@ const concepts = [
     "featured": false
   },
   {
-    "category": "coffee",
+    "category": "explore",
     "name": "Café de especialidad",
     "pitch": "Descubre el ritual detrás de cada origen.",
     "pitchEn": "Discover the story behind every origin.",
@@ -152,7 +152,7 @@ const concepts = [
     "featured": false
   },
   {
-    "category": "coffee",
+    "category": "explore",
     "name": "Mañanas sin prisa",
     "pitch": "Cafés y lugares para comenzar el día con calma.",
     "pitchEn": "Places to start the day beautifully and slowly.",
@@ -161,7 +161,7 @@ const concepts = [
     "featured": false
   },
   {
-    "category": "coffee",
+    "category": "explore",
     "name": "Cultura cafetera",
     "pitch": "Una puerta a las historias del café colombiano.",
     "pitchEn": "A doorway into Colombia's coffee culture.",
@@ -277,14 +277,17 @@ const concepts = [
     "secondary": "wellness",
     "featured": false
   }
+  ,{category:'chef',name:'Una noche en la villa',pitch:'Una velada privada alrededor de tu mesa.',pitchEn:'An evening shaped around your own table.',img:'dine',secondary:'coffee',featured:false},
+  {category:'vip',name:'El arte de resolver',pitch:'Asistencia personal para conectar los detalles.',pitchEn:'Personal assistance to connect the details.',img:'coffee',secondary:'move',featured:false}
 ] as const;
+const englishNames=["Valley-view suites", "Boutique hideaways", "Design escapes", "Panoramic penthouse", "Villa in the mountains", "Residences for gathering", "The chef’s table", "Contemporary flavors", "Intimate tables", "Sunset rooftops", "Signature cocktails", "Nights on your terms", "Wellness rituals", "Private spa", "Mindful movement", "Specialty coffee", "Unhurried mornings", "Coffee culture", "Executive transfers", "Private routes", "Group transport", "The valley from above", "Panoramic moments", "Aerial escapes", "Guatapé in private", "Nature & adventure", "Local experiences", "Discreet support", "Private coordination", "Peace of mind", "An evening at the villa", "The art of arranging"];
 const safeSlug=(value:string)=>value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
 export const editorialListings:Listing[]=concepts.map((c,i)=>{
   const slug='inspiracion-'+c.category+'-'+safeSlug(c.name);
   const image='/images/'+c.img+'.webp';
   const secondary='/images/'+c.secondary+'.webp';
   return {
-    id:slug,slug,name:c.name,category:c.category,status:'demo',relationship:'sample',
+    id:slug,slug,name:c.name,nameEn:englishNames[i]||c.name,category:c.category,status:'demo',relationship:'sample',
     tagline:c.pitch,taglineEn:c.pitchEn,
     description:c.pitch+' Una idea para inspirar un viaje extraordinario a Medellín. Esta propuesta es contenido editorial de demostración, no una propiedad, establecimiento ni servicio confirmado. Nuestro equipo deberá verificar las opciones reales, sus condiciones y su disponibilidad antes de presentarlas al viajero.',
     descriptionEn:c.pitchEn+' This is an editorial concept to inspire your Medellín journey, not a confirmed property, venue or bookable service. Real options, terms and availability must be verified by the concierge team before they are offered to guests.',

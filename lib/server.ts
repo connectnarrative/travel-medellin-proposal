@@ -1,4 +1,4 @@
-import {categories as seededCategories} from './seed';
+import {collectionCategories as seededCategories} from './collections';
 import {editorialListings} from './editorial';
 import type {Category,Listing,SiteSettings} from './types';
 
@@ -7,7 +7,7 @@ import type {Category,Listing,SiteSettings} from './types';
  * The existing Cloudflare-backed main website retains its production database,
  * private records and CMS. No privileged API keys are bundled in this demo.
  */
-export const origin='https://travel-medellin-proposal-fkgalejandro-9911s-projects.vercel.app';
+export const origin='https://travel-medellin-proposal.vercel.app';
 
 export async function content(all=false):Promise<{categories:Category[];listings:Listing[]}> {
   void all;

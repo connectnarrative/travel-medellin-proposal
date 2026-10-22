@@ -1,6 +1,4 @@
-import {requireChatGPTUser} from '@/app/chatgpt-auth';
-import {admin} from '@/lib/server';
-import Admin from './panel';
+import {T} from '../ui';
 export const dynamic='force-dynamic';
-export const metadata={title:'CMS',robots:{index:false,follow:false}};
-export default async function AdminPage(){await requireChatGPTUser('/admin');if(!await admin())return <main id="main" className="page"><h1>Acceso restringido.</h1><p>Tu cuenta no tiene acceso al CMS de Travel & Life.</p><a href="/">Volver al inicio</a></main>;return <Admin/>}
+export const metadata={title:'Administration — not activated',robots:{index:false,follow:false}};
+export default function AdminPage(){return <main id="main" className="page"><span className="eyebrow">AUREA / ADMINISTRATION</span><h1><T es="Acceso operativo" en="Operational access"/><br/><T es="por activar." en="awaiting activation."/></h1><p className="lead"><T es="El CMS, CRM y portal de aliados requieren el backend y la autenticación propios de AUREA. Esta presentación no permite acceso a datos privados ni cambios de contenido." en="The CMS, CRM and partner portal require AUREA’s own backend and authentication. This presentation does not provide access to private records or content changes."/></p><a className="button gold" href="/"><T es="VOLVER A AUREA" en="RETURN TO AUREA"/></a></main>}
