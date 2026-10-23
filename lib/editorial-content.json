@@ -1,0 +1,1154 @@
+[
+  {
+    "id": "inspiracion-stay-suites-con-vista-al-valle",
+    "slug": "inspiracion-stay-suites-con-vista-al-valle",
+    "name": "Suite con vista al valle",
+    "nameEn": "Valley-view suite",
+    "category": "stay",
+    "tagline": "Una habitación con vista, espacio para descansar y acceso a la ciudad.",
+    "taglineEn": "A room with a view, space to unwind and a base for exploring the city.",
+    "description": "Compara suites por vista, distribución y ubicación. Una buena opción para una primera visita que combine descanso, restaurantes y recorridos urbanos.",
+    "descriptionEn": "Compare suites by view, layout and location. A useful starting point for a first visit combining downtime, restaurants and city outings.",
+    "why": "Parejas y primeras visitas",
+    "whyEn": "Couples and first visits",
+    "neighborhood": "Medellín",
+    "mood": "Descanso / Rest",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Parejas y primeras visitas",
+        "valueEn": "Couples and first visits"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Habitación o suite con vista solicitada",
+        "valueEn": "Room or suite with a requested view"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Vista real, categoría, desayuno y política de cancelación",
+        "valueEn": "Actual view, room category, breakfast and cancellation policy"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-stay-refugios-boutique",
+    "slug": "inspiracion-stay-refugios-boutique",
+    "name": "Hotel boutique",
+    "nameEn": "Boutique hotel",
+    "category": "stay",
+    "tagline": "Una estancia de menor escala, con diseño y atención personal.",
+    "taglineEn": "A smaller stay with distinctive design and personal service.",
+    "description": "Para viajeros que prefieren un hotel con carácter a un gran complejo. Define qué pesa más: silencio, acceso a restaurantes, áreas comunes o atención en inglés.",
+    "descriptionEn": "For travelers who prefer a hotel with character to a large resort. Decide what matters most: quiet, nearby dining, shared spaces or English-speaking staff.",
+    "why": "Escapadas en pareja",
+    "whyEn": "Couples’ getaways",
+    "neighborhood": "Medellín",
+    "mood": "Descanso / Rest",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Escapadas en pareja",
+        "valueEn": "Couples’ getaways"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Estancia boutique según tus fechas",
+        "valueEn": "Boutique stay for your dates"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Ruido, accesibilidad, recepción y categoría de habitación",
+        "valueEn": "Noise, accessibility, reception hours and room category"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-stay-escapadas-de-diseno",
+    "slug": "inspiracion-stay-escapadas-de-diseno",
+    "name": "Hotel de diseño",
+    "nameEn": "Design hotel",
+    "category": "stay",
+    "tagline": "Arquitectura e interiores como parte de la estancia.",
+    "taglineEn": "Architecture and interiors as part of the stay.",
+    "description": "Explora hoteles donde los espacios tienen una identidad definida. La selección debe mostrar la habitación exacta y las áreas que realmente podrás usar.",
+    "descriptionEn": "Explore hotels with a clear architectural identity. The selection should show the actual room and the spaces you will be able to use.",
+    "why": "Viajeros interesados en diseño",
+    "whyEn": "Design-minded travelers",
+    "neighborhood": "Medellín",
+    "mood": "Diseño / Design",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Viajeros interesados en diseño",
+        "valueEn": "Design-minded travelers"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Habitación con áreas comunes de interés",
+        "valueEn": "Room with relevant shared spaces"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Fotos de la categoría, obras cercanas y acceso a instalaciones",
+        "valueEn": "Room-category photos, nearby construction and facility access"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-live-penthouse-panoramico",
+    "slug": "inspiracion-live-penthouse-panoramico",
+    "name": "Penthouse privado",
+    "nameEn": "Private penthouse",
+    "category": "live",
+    "tagline": "Terraza, áreas compartidas y privacidad en una sola dirección.",
+    "taglineEn": "A terrace, shared living space and privacy at one address.",
+    "description": "Un formato para compartir la estancia sin renunciar a espacios propios. Compara distribución de habitaciones, áreas exteriores y reglas del edificio antes de decidir.",
+    "descriptionEn": "A format for sharing a stay while keeping personal space. Compare bedroom layouts, outdoor areas and building rules before choosing.",
+    "why": "Parejas o grupos pequeños",
+    "whyEn": "Couples or small groups",
+    "neighborhood": "Medellín",
+    "mood": "Privado / Private",
+    "featured": true,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Parejas o grupos pequeños",
+        "valueEn": "Couples or small groups"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Residencia completa de uso privado",
+        "valueEn": "Entire residence for private use"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Capacidad autorizada, visitantes, ruido y depósito",
+        "valueEn": "Authorized capacity, visitors, noise rules and deposit"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-live-villa-entre-montanas",
+    "slug": "inspiracion-live-villa-entre-montanas",
+    "name": "Villa de montaña",
+    "nameEn": "Mountain villa",
+    "category": "live",
+    "tagline": "Una casa fuera del centro para compartir, cocinar y descansar.",
+    "taglineEn": "A house outside the center for gathering, cooking and downtime.",
+    "description": "Una alternativa para quienes prefieren espacio y un entorno verde. Incluye los traslados en el plan: la distancia a restaurantes y actividades cambia la experiencia.",
+    "descriptionEn": "An alternative for those who prefer space and a green setting. Build transfers into the plan: distance from dining and activities matters.",
+    "why": "Familias y escapadas de descanso",
+    "whyEn": "Families and relaxed getaways",
+    "neighborhood": "Antioquia",
+    "mood": "Descanso / Rest",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Familias y escapadas de descanso",
+        "valueEn": "Families and relaxed getaways"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Casa completa en entorno de montaña",
+        "valueEn": "Entire house in a mountain setting"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Acceso vial, personal, clima y tiempo real de traslado",
+        "valueEn": "Road access, staff, weather and actual transfer time"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-live-residencias-para-grupos",
+    "slug": "inspiracion-live-residencias-para-grupos",
+    "name": "Casa para grupos",
+    "nameEn": "Group residence",
+    "category": "live",
+    "tagline": "Habitaciones y espacios comunes para viajar juntos.",
+    "taglineEn": "Bedrooms and shared spaces for traveling together.",
+    "description": "Organiza una estancia de grupo a partir de la distribución, no solo del número de camas. Revisa privacidad, baños, comedor y logística de llegada.",
+    "descriptionEn": "Plan a group stay around the layout, not just the number of beds. Review privacy, bathrooms, dining space and arrival logistics.",
+    "why": "Familias y grupos de amigos",
+    "whyEn": "Families and groups of friends",
+    "neighborhood": "Medellín",
+    "mood": "Grupos / Groups",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Familias y grupos de amigos",
+        "valueEn": "Families and groups of friends"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Casa de uso exclusivo",
+        "valueEn": "Exclusive-use house"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Camas y baños, normas de visitas y horarios de personal",
+        "valueEn": "Beds and bathrooms, visitor rules and staff hours"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-dine-cena-de-autor",
+    "slug": "inspiracion-dine-cena-de-autor",
+    "name": "Menú degustación",
+    "nameEn": "Tasting menu",
+    "category": "dine",
+    "tagline": "Una cena en varios tiempos para conocer la propuesta del chef.",
+    "taglineEn": "A multi-course dinner built around the chef’s approach.",
+    "description": "Una noche centrada en la cocina. Al preparar la solicitud, indica restricciones alimentarias y si quieres maridaje; ambos cambian el menú y el presupuesto.",
+    "descriptionEn": "An evening focused on the food. Include dietary requirements and whether you want pairings; both affect the menu and budget.",
+    "why": "Parejas y celebraciones",
+    "whyEn": "Couples and celebrations",
+    "neighborhood": "Medellín",
+    "mood": "Gastronomía / Dining",
+    "featured": true,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Parejas y celebraciones",
+        "valueEn": "Couples and celebrations"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Menú por tiempos, con o sin maridaje",
+        "valueEn": "Multi-course menu, with or without pairings"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Menú vigente, alergias, duración y precio total",
+        "valueEn": "Current menu, allergies, duration and total price"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-dine-sabores-contemporaneos",
+    "slug": "inspiracion-dine-sabores-contemporaneos",
+    "name": "Cocina colombiana contemporánea",
+    "nameEn": "Contemporary Colombian dining",
+    "category": "dine",
+    "tagline": "Ingredientes locales con una interpretación actual.",
+    "taglineEn": "Local ingredients with a contemporary approach.",
+    "description": "Una mesa para explorar cocina colombiana más allá de los platos conocidos. Compara carta, ambiente y opciones para compartir según tu grupo.",
+    "descriptionEn": "A table for exploring Colombian cuisine beyond the familiar dishes. Compare the menu, setting and sharing options for your group.",
+    "why": "Viajeros interesados en gastronomía local",
+    "whyEn": "Travelers interested in local food",
+    "neighborhood": "Medellín",
+    "mood": "Gastronomía / Dining",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Viajeros interesados en gastronomía local",
+        "valueEn": "Travelers interested in local food"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Cena a la carta o menú de temporada",
+        "valueEn": "À la carte dinner or seasonal menu"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Carta, porciones, opciones vegetarianas y reserva",
+        "valueEn": "Menu, portions, vegetarian options and reservation"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-dine-mesas-intimas",
+    "slug": "inspiracion-dine-mesas-intimas",
+    "name": "Salón privado para cenar",
+    "nameEn": "Private dining room",
+    "category": "dine",
+    "tagline": "Una mesa separada para una celebración o reunión.",
+    "taglineEn": "A separate table setting for a celebration or meeting.",
+    "description": "Prioriza privacidad, acústica y servicio coordinado. Un salón privado puede funcionar para una cena familiar o de negocios, con el menú acordado antes de llegar.",
+    "descriptionEn": "Prioritize privacy, acoustics and coordinated service. A private room can suit a family or business dinner, with the menu agreed in advance.",
+    "why": "Celebraciones y cenas de negocios",
+    "whyEn": "Celebrations and business dinners",
+    "neighborhood": "Medellín",
+    "mood": "Privado / Private",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Celebraciones y cenas de negocios",
+        "valueEn": "Celebrations and business dinners"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Salón o área privada según el grupo",
+        "valueEn": "Private room or area sized to the group"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Exclusividad, consumo mínimo, menú y decoración permitida",
+        "valueEn": "Exclusive use, minimum spend, menu and permitted decoration"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-night-rooftops-al-atardecer",
+    "slug": "inspiracion-night-rooftops-al-atardecer",
+    "name": "Rooftop al atardecer",
+    "nameEn": "Sunset rooftop",
+    "category": "night",
+    "tagline": "Terraza, vistas y una mesa para empezar la noche.",
+    "taglineEn": "A terrace, a view and a table to start the evening.",
+    "description": "Organiza la visita alrededor del atardecer y de la ubicación de la mesa. Confirma un plan cubierto por si llueve y las condiciones de ingreso del lugar.",
+    "descriptionEn": "Plan around sunset and table location. Confirm a covered alternative for rain and the venue’s entry requirements.",
+    "why": "Primera noche y encuentros de grupo",
+    "whyEn": "First evenings and group gatherings",
+    "neighborhood": "Medellín",
+    "mood": "Noche / Nightlife",
+    "featured": true,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Primera noche y encuentros de grupo",
+        "valueEn": "First evenings and group gatherings"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Mesa en terraza según disponibilidad",
+        "valueEn": "Terrace table subject to availability"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Vista, lluvia, consumo mínimo y código de vestimenta",
+        "valueEn": "View, rain cover, minimum spend and dress code"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-night-cocteleria-de-autor",
+    "slug": "inspiracion-night-cocteleria-de-autor",
+    "name": "Bar de coctelería",
+    "nameEn": "Cocktail bar",
+    "category": "night",
+    "tagline": "Una carta de autor en un ambiente para conversar.",
+    "taglineEn": "Signature drinks in a setting made for conversation.",
+    "description": "Elige por estilo de coctelería, nivel de música y tipo de mesa. También conviene confirmar opciones sin alcohol y si el lugar recibe reservas.",
+    "descriptionEn": "Choose by cocktail style, music volume and seating. It is also worth confirming alcohol-free options and whether reservations are accepted.",
+    "why": "Parejas y grupos pequeños",
+    "whyEn": "Couples and small groups",
+    "neighborhood": "Medellín",
+    "mood": "Noche / Nightlife",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Parejas y grupos pequeños",
+        "valueEn": "Couples and small groups"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Mesa o barra con carta de coctelería",
+        "valueEn": "Table or bar seating with a cocktail menu"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Horario, reserva, música y opciones sin alcohol",
+        "valueEn": "Hours, reservations, music and alcohol-free options"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-night-noches-a-tu-medida",
+    "slug": "inspiracion-night-noches-a-tu-medida",
+    "name": "Noche de música en vivo",
+    "nameEn": "Live music evening",
+    "category": "night",
+    "tagline": "Una salida elegida por la música, el horario y el ambiente.",
+    "taglineEn": "An evening chosen around the music, timing and atmosphere.",
+    "description": "Construye la noche a partir de la programación del lugar. Define si buscas escuchar sentado, bailar o celebrar, y coordina el regreso antes de salir.",
+    "descriptionEn": "Build the evening around the venue’s program. Decide whether you want seated listening, dancing or a celebration, and arrange the return trip.",
+    "why": "Amigos y amantes de la música",
+    "whyEn": "Friends and music lovers",
+    "neighborhood": "Medellín",
+    "mood": "Noche / Nightlife",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Amigos y amantes de la música",
+        "valueEn": "Friends and music lovers"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Entrada o mesa según la programación",
+        "valueEn": "Admission or table based on the program"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Artista, horario, cover, edad de ingreso y transporte",
+        "valueEn": "Performer, schedule, cover charge, entry age and transport"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-wellness-rituales-de-bienestar",
+    "slug": "inspiracion-wellness-rituales-de-bienestar",
+    "name": "Masaje de relajación",
+    "nameEn": "Relaxation massage",
+    "category": "wellness",
+    "tagline": "Una pausa en el itinerario con técnica y duración a elegir.",
+    "taglineEn": "A pause in the itinerary, with technique and duration to choose.",
+    "description": "Solicita una sesión acorde a tus preferencias de presión y horario. Comparte cualquier consideración relevante directamente con el profesional antes de confirmar.",
+    "descriptionEn": "Request a session suited to your pressure preference and schedule. Discuss any relevant considerations directly with the practitioner before confirming.",
+    "why": "Descanso durante la estancia",
+    "whyEn": "Downtime during the stay",
+    "neighborhood": "Medellín",
+    "mood": "Descanso / Rest",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Descanso durante la estancia",
+        "valueEn": "Downtime during the stay"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Sesión individual en spa o alojamiento autorizado",
+        "valueEn": "Individual session at a spa or approved accommodation"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Profesional, técnica, duración y condiciones del servicio",
+        "valueEn": "Practitioner, technique, duration and service conditions"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-wellness-spa-privado",
+    "slug": "inspiracion-wellness-spa-privado",
+    "name": "Circuito de spa",
+    "nameEn": "Spa circuit",
+    "category": "wellness",
+    "tagline": "Un bloque de descanso con instalaciones y tratamientos a elegir.",
+    "taglineEn": "A block of downtime with facilities and treatments to choose.",
+    "description": "Compara el acceso a zonas húmedas, las áreas de descanso y los tratamientos. No todos los pases incluyen los mismos espacios ni uso exclusivo.",
+    "descriptionEn": "Compare access to wet areas, relaxation spaces and treatments. Passes do not all include the same facilities or exclusive use.",
+    "why": "Parejas y días de descanso",
+    "whyEn": "Couples and rest days",
+    "neighborhood": "Medellín",
+    "mood": "Descanso / Rest",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Parejas y días de descanso",
+        "valueEn": "Couples and rest days"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Pase de spa con alcance definido",
+        "valueEn": "Spa pass with a defined scope"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Instalaciones incluidas, aforo, horarios y tratamientos",
+        "valueEn": "Included facilities, capacity, hours and treatments"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-wellness-movimiento-consciente",
+    "slug": "inspiracion-wellness-movimiento-consciente",
+    "name": "Yoga privado",
+    "nameEn": "Private yoga session",
+    "category": "wellness",
+    "tagline": "Una sesión adaptada a tu nivel y al ritmo del viaje.",
+    "taglineEn": "A session adapted to your level and travel schedule.",
+    "description": "Define si buscas movilidad suave, respiración o una práctica más activa. El espacio, el equipo y la experiencia del instructor forman parte de la selección.",
+    "descriptionEn": "Choose between gentle mobility, breathwork or a more active practice. Space, equipment and instructor experience are part of the selection.",
+    "why": "Personas o grupos pequeños",
+    "whyEn": "Individuals or small groups",
+    "neighborhood": "Medellín",
+    "mood": "Activo / Active",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Personas o grupos pequeños",
+        "valueEn": "Individuals or small groups"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Clase privada según nivel y preferencias",
+        "valueEn": "Private class matched to level and preferences"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Instructor, espacio, equipo y necesidades de movilidad",
+        "valueEn": "Instructor, space, equipment and mobility needs"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-explore-cafe-de-especialidad",
+    "slug": "inspiracion-explore-cafe-de-especialidad",
+    "name": "Cata de café",
+    "nameEn": "Coffee tasting",
+    "category": "explore",
+    "tagline": "Compara orígenes, aromas y métodos de preparación.",
+    "taglineEn": "Compare origins, aromas and brewing methods.",
+    "description": "Una introducción práctica al café colombiano. Busca una sesión guiada que explique qué estás probando, con tiempo para preguntas y sin necesidad de conocimientos previos.",
+    "descriptionEn": "A practical introduction to Colombian coffee. Look for a guided session that explains what you are tasting, with time for questions and no prior knowledge required.",
+    "why": "Curiosos y amantes del café",
+    "whyEn": "Curious travelers and coffee lovers",
+    "neighborhood": "Medellín",
+    "mood": "Gastronomía / Dining",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Curiosos y amantes del café",
+        "valueEn": "Curious travelers and coffee lovers"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Cata guiada en grupo privado",
+        "valueEn": "Guided tasting for a private group"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Número de cafés, idioma, duración y ubicación",
+        "valueEn": "Number of coffees, language, duration and location"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-explore-mananas-sin-prisa",
+    "slug": "inspiracion-explore-mananas-sin-prisa",
+    "name": "Ruta de cafés de barrio",
+    "nameEn": "Neighborhood café walk",
+    "category": "explore",
+    "tagline": "Caminata, cafés y una lectura cotidiana de la ciudad.",
+    "taglineEn": "A walk, café stops and an everyday view of the city.",
+    "description": "Arma una ruta corta entre cafés y calles del barrio. El objetivo es conocer procesos y lugares a pie, con paradas adaptadas al ritmo del grupo.",
+    "descriptionEn": "Build a short route between cafés and neighborhood streets. Explore processes and places on foot, with stops adapted to the group’s pace.",
+    "why": "Mañanas de ritmo tranquilo",
+    "whyEn": "Relaxed mornings",
+    "neighborhood": "Medellín",
+    "mood": "Cultura / Culture",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Mañanas de ritmo tranquilo",
+        "valueEn": "Relaxed mornings"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Recorrido a pie con paradas de café",
+        "valueEn": "Walking route with café stops"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Barrio, distancia, accesibilidad y consumos incluidos",
+        "valueEn": "Neighborhood, distance, accessibility and included purchases"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-explore-cultura-cafetera",
+    "slug": "inspiracion-explore-cultura-cafetera",
+    "name": "Visita a finca cafetera",
+    "nameEn": "Coffee farm visit",
+    "category": "explore",
+    "tagline": "Del cultivo a la taza, fuera del centro urbano.",
+    "taglineEn": "From the growing process to the cup, outside the city.",
+    "description": "Conoce el proceso del café en una finca que reciba visitantes. La actividad depende de la temporada, el clima y las labores del día; acuerda los traslados por separado.",
+    "descriptionEn": "Learn about the coffee process at a farm that welcomes visitors. Activities depend on the season, weather and daily work; agree transfers separately.",
+    "why": "Viajeros interesados en el origen del café",
+    "whyEn": "Travelers interested in coffee origins",
+    "neighborhood": "Antioquia",
+    "mood": "Cultura / Culture",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Viajeros interesados en el origen del café",
+        "valueEn": "Travelers interested in coffee origins"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Visita guiada a una finca",
+        "valueEn": "Guided farm visit"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Ubicación, traslado, terreno y actividades de temporada",
+        "valueEn": "Location, transfers, terrain and seasonal activities"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-move-traslados-ejecutivos",
+    "slug": "inspiracion-move-traslados-ejecutivos",
+    "name": "Traslado de aeropuerto",
+    "nameEn": "Airport transfer",
+    "category": "move",
+    "tagline": "Recogida coordinada con tu vuelo y tu equipaje.",
+    "taglineEn": "Pickup coordinated with your flight and luggage.",
+    "description": "Planifica el trayecto entre el aeropuerto y tu alojamiento. Envía el número de vuelo, pasajeros y maletas para que la cotización corresponda al vehículo necesario.",
+    "descriptionEn": "Plan the journey between the airport and your accommodation. Share the flight number, passenger count and bags so the quote matches the vehicle needed.",
+    "why": "Llegadas y salidas",
+    "whyEn": "Arrivals and departures",
+    "neighborhood": "Medellín / Rionegro",
+    "mood": "Logística / Logistics",
+    "featured": true,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Llegadas y salidas",
+        "valueEn": "Arrivals and departures"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Trayecto de ida o regreso",
+        "valueEn": "One-way arrival or departure transfer"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Aeropuerto, seguimiento de vuelo, espera y peajes",
+        "valueEn": "Airport, flight tracking, waiting time and tolls"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-move-rutas-privadas",
+    "slug": "inspiracion-move-rutas-privadas",
+    "name": "Chofer por horas",
+    "nameEn": "Hourly chauffeur",
+    "category": "move",
+    "tagline": "Varias paradas en una agenda coordinada.",
+    "taglineEn": "Several stops in one coordinated schedule.",
+    "description": "Un formato para reuniones, compras o recorridos urbanos con esperas entre paradas. Define la ruta y las horas previstas para evitar cotizaciones incompletas.",
+    "descriptionEn": "A format for meetings, shopping or city outings with waiting between stops. Define the route and expected hours to avoid incomplete quotes.",
+    "why": "Agendas con varias paradas",
+    "whyEn": "Schedules with multiple stops",
+    "neighborhood": "Medellín",
+    "mood": "Logística / Logistics",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Agendas con varias paradas",
+        "valueEn": "Schedules with multiple stops"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Vehículo con conductor por bloque de horas",
+        "valueEn": "Vehicle and driver for an agreed block of hours"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Horas incluidas, zona, parqueaderos y tiempo extra",
+        "valueEn": "Included hours, area, parking and overtime"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-move-movilidad-para-grupos",
+    "slug": "inspiracion-move-movilidad-para-grupos",
+    "name": "Van para grupos",
+    "nameEn": "Group van transfer",
+    "category": "move",
+    "tagline": "Un solo punto de encuentro y espacio para viajar juntos.",
+    "taglineEn": "One meeting point and room to travel together.",
+    "description": "Coordina un vehículo según pasajeros y equipaje, no solo por número de asientos. Útil para llegadas de grupo, eventos y excursiones con horarios compartidos.",
+    "descriptionEn": "Choose a vehicle for passengers and luggage, not just seat count. Useful for group arrivals, events and excursions with shared schedules.",
+    "why": "Familias y grupos",
+    "whyEn": "Families and groups",
+    "neighborhood": "Medellín / Antioquia",
+    "mood": "Grupos / Groups",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Familias y grupos",
+        "valueEn": "Families and groups"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Van con conductor y ruta acordada",
+        "valueEn": "Van with driver and an agreed route"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Asientos, maletas, sillas infantiles y puntos de recogida",
+        "valueEn": "Seats, bags, child seats and pickup points"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-fly-el-valle-desde-el-aire",
+    "slug": "inspiracion-fly-el-valle-desde-el-aire",
+    "name": "Vuelo panorámico en helicóptero",
+    "nameEn": "Scenic helicopter flight",
+    "category": "fly",
+    "tagline": "Una ruta aérea para ver el valle desde otra altura.",
+    "taglineEn": "An aerial route to see the valley from a different height.",
+    "description": "Prepara una solicitud de vuelo turístico con ruta y duración deseadas. La operación depende de un proveedor autorizado, disponibilidad y condiciones meteorológicas.",
+    "descriptionEn": "Prepare a scenic flight request with your preferred route and duration. Operation depends on an authorized provider, availability and weather conditions.",
+    "why": "Viajeros interesados en vistas aéreas",
+    "whyEn": "Travelers interested in aerial views",
+    "neighborhood": "Antioquia",
+    "mood": "Aventura / Adventure",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Viajeros interesados en vistas aéreas",
+        "valueEn": "Travelers interested in aerial views"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Vuelo turístico con ruta por acordar",
+        "valueEn": "Scenic flight with a route to be agreed"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Operador, aeronave, pasajeros, peso y política por clima",
+        "valueEn": "Operator, aircraft, passengers, weight and weather policy"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-fly-momentos-panoramicos",
+    "slug": "inspiracion-fly-momentos-panoramicos",
+    "name": "Ruta aérea sobre embalses",
+    "nameEn": "Reservoir scenic flight",
+    "category": "fly",
+    "tagline": "Agua y montañas en una solicitud de vuelo a medida.",
+    "taglineEn": "Water and mountains in a tailored flight request.",
+    "description": "Explora la posibilidad de una ruta panorámica hacia la zona de embalses. El recorrido, los permisos y los puntos de salida deben confirmarse antes de ofrecer una cotización.",
+    "descriptionEn": "Explore a possible scenic route toward the reservoir area. Routing, permissions and departure points must be confirmed before a quote is offered.",
+    "why": "Ocasiones especiales y fotografía",
+    "whyEn": "Special occasions and photography",
+    "neighborhood": "Antioquia",
+    "mood": "Aventura / Adventure",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Ocasiones especiales y fotografía",
+        "valueEn": "Special occasions and photography"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Solicitud de ruta panorámica",
+        "valueEn": "Scenic route inquiry"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Ruta autorizada, tiempo de vuelo, clima y restricciones",
+        "valueEn": "Authorized route, flight time, weather and restrictions"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-fly-escapadas-aereas",
+    "slug": "inspiracion-fly-escapadas-aereas",
+    "name": "Charter privado en helicóptero",
+    "nameEn": "Private helicopter charter",
+    "category": "fly",
+    "tagline": "Un traslado aéreo definido por destino, horario y operación.",
+    "taglineEn": "An air transfer defined by destination, schedule and operations.",
+    "description": "Un punto de partida para evaluar un trayecto privado. La viabilidad depende de los puntos de aterrizaje, permisos, aeronave y necesidades del grupo.",
+    "descriptionEn": "A starting point for evaluating a private journey. Feasibility depends on landing points, permissions, aircraft and the group’s needs.",
+    "why": "Itinerarios privados con tiempos definidos",
+    "whyEn": "Private itineraries with defined timing",
+    "neighborhood": "Antioquia",
+    "mood": "Privado / Private",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Itinerarios privados con tiempos definidos",
+        "valueEn": "Private itineraries with defined timing"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Charter sujeto a viabilidad operativa",
+        "valueEn": "Charter subject to operational feasibility"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Helipuertos, permisos, equipaje y transporte terrestre",
+        "valueEn": "Helipads, permissions, baggage and ground transfers"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-explore-guatape-en-privado",
+    "slug": "inspiracion-explore-guatape-en-privado",
+    "name": "Guatapé en privado",
+    "nameEn": "Private Guatapé day trip",
+    "category": "explore",
+    "tagline": "Pueblo, piedra y embalse en una ruta que tú priorizas.",
+    "taglineEn": "Town, rock and reservoir on a route you prioritize.",
+    "description": "Combina los lugares que más te interesen: calles del pueblo, miradores o una actividad en el agua. Decide antes qué entradas, comidas y traslados quieres incluir.",
+    "descriptionEn": "Combine the places that interest you most: town streets, viewpoints or time on the water. Decide which admissions, meals and transfers you want included.",
+    "why": "Primera visita y excursiones de grupo",
+    "whyEn": "First visits and group day trips",
+    "neighborhood": "Guatapé",
+    "mood": "Cultura / Culture",
+    "featured": true,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Primera visita y excursiones de grupo",
+        "valueEn": "First visits and group day trips"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Excursión privada con paradas acordadas",
+        "valueEn": "Private day trip with agreed stops"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Ruta, entradas, escaleras, clima y tiempo de regreso",
+        "valueEn": "Route, admissions, stairs, weather and return time"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-explore-naturaleza-aventura",
+    "slug": "inspiracion-explore-naturaleza-aventura",
+    "name": "Caminata de naturaleza",
+    "nameEn": "Guided nature walk",
+    "category": "explore",
+    "tagline": "Un recorrido verde con dificultad y ritmo acordados.",
+    "taglineEn": "A green route with an agreed difficulty and pace.",
+    "description": "Elige el sendero a partir del nivel del grupo y el tiempo disponible. Un guía debe confirmar acceso, estado del terreno y alternativas según el clima.",
+    "descriptionEn": "Choose a trail based on the group’s ability and available time. A guide should confirm access, terrain conditions and weather alternatives.",
+    "why": "Grupos que disfrutan caminar",
+    "whyEn": "Groups who enjoy walking",
+    "neighborhood": "Antioquia",
+    "mood": "Activo / Active",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Grupos que disfrutan caminar",
+        "valueEn": "Groups who enjoy walking"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Caminata guiada por sendero habilitado",
+        "valueEn": "Guided walk on an accessible trail"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Distancia, desnivel, calzado, transporte y clima",
+        "valueEn": "Distance, elevation gain, footwear, transport and weather"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-explore-experiencias-locales",
+    "slug": "inspiracion-explore-experiencias-locales",
+    "name": "Medellín: arte y barrios",
+    "nameEn": "Medellín art and neighborhoods",
+    "category": "explore",
+    "tagline": "Un recorrido a pie para conocer historias, arte y vida local.",
+    "taglineEn": "A walking route through stories, art and local life.",
+    "description": "Define una ruta cultural con un guía local, según tus intereses. Prioriza tiempo para escuchar, caminar y preguntar, con una selección realista de paradas.",
+    "descriptionEn": "Plan a cultural route with a local guide around your interests. Leave time to listen, walk and ask questions, with a realistic number of stops.",
+    "why": "Primeras visitas e interés cultural",
+    "whyEn": "First visits and cultural interests",
+    "neighborhood": "Medellín",
+    "mood": "Cultura / Culture",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Primeras visitas e interés cultural",
+        "valueEn": "First visits and cultural interests"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Recorrido privado con guía local",
+        "valueEn": "Private route with a local guide"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Barrio, idioma, accesibilidad, transporte y permisos de fotos",
+        "valueEn": "Neighborhood, language, accessibility, transport and photo permissions"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-protection-asistencia-discreta",
+    "slug": "inspiracion-protection-asistencia-discreta",
+    "name": "Acompañamiento de protección",
+    "nameEn": "Personal protection escort",
+    "category": "protection",
+    "tagline": "Una solicitud de protección con alcance y responsable definidos.",
+    "taglineEn": "A protection inquiry with a defined scope and responsible provider.",
+    "description": "Describe tu itinerario y tus necesidades para una evaluación con un operador habilitado. El alcance, el personal y la cobertura se establecen por escrito antes del servicio.",
+    "descriptionEn": "Describe your itinerary and needs for assessment by a licensed provider. Scope, personnel and coverage are established in writing before service.",
+    "why": "Viajeros con una necesidad específica",
+    "whyEn": "Travelers with a specific protection need",
+    "neighborhood": "Medellín / Antioquia",
+    "mood": "Privado / Private",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Viajeros con una necesidad específica",
+        "valueEn": "Travelers with a specific protection need"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Acompañamiento según evaluación profesional",
+        "valueEn": "Escort based on a professional assessment"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Licencias, personal asignado, cobertura y protocolos",
+        "valueEn": "Licenses, assigned personnel, coverage and protocols"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-protection-coordinacion-privada",
+    "slug": "inspiracion-protection-coordinacion-privada",
+    "name": "Seguridad para eventos privados",
+    "nameEn": "Private event security",
+    "category": "protection",
+    "tagline": "Control de acceso y coordinación para una reunión privada.",
+    "taglineEn": "Access control and coordination for a private gathering.",
+    "description": "Prepara el contexto del evento: lugar, horario, asistentes y condiciones del recinto. Un operador habilitado debe definir el equipo y el servicio apropiados.",
+    "descriptionEn": "Prepare the event context: venue, schedule, guests and venue conditions. A licensed provider must define the appropriate team and service.",
+    "why": "Anfitriones y organizadores",
+    "whyEn": "Hosts and organizers",
+    "neighborhood": "Medellín",
+    "mood": "Grupos / Groups",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Anfitriones y organizadores",
+        "valueEn": "Hosts and organizers"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Servicio de seguridad con alcance por escrito",
+        "valueEn": "Security service with a written scope"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Operador, aforo, accesos y coordinación con el recinto",
+        "valueEn": "Provider, capacity, access points and venue coordination"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-protection-tranquilidad-al-viajar",
+    "slug": "inspiracion-protection-tranquilidad-al-viajar",
+    "name": "Planificación de desplazamientos",
+    "nameEn": "Travel security planning",
+    "category": "protection",
+    "tagline": "Revisión del itinerario y coordinación de desplazamientos.",
+    "taglineEn": "Itinerary review and journey coordination.",
+    "description": "Organiza una evaluación de necesidades antes del viaje. La propuesta debe aclarar quién coordina, qué trayectos cubre y cómo se comunica el grupo durante el servicio.",
+    "descriptionEn": "Arrange a needs assessment before traveling. The proposal should clarify who coordinates, which journeys are covered and how the group communicates during service.",
+    "why": "Agendas de trabajo y grupos privados",
+    "whyEn": "Business schedules and private groups",
+    "neighborhood": "Medellín / Antioquia",
+    "mood": "Logística / Logistics",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Agendas de trabajo y grupos privados",
+        "valueEn": "Business schedules and private groups"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Evaluación y coordinación con proveedor habilitado",
+        "valueEn": "Assessment and coordination with a licensed provider"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Alcance, contactos operativos, horarios y condiciones",
+        "valueEn": "Scope, operational contacts, hours and conditions"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-chef-una-noche-en-la-villa",
+    "slug": "inspiracion-chef-una-noche-en-la-villa",
+    "name": "Chef privado en tu villa",
+    "nameEn": "Private chef at your villa",
+    "category": "chef",
+    "tagline": "Un menú preparado y servido en tu alojamiento.",
+    "taglineEn": "A menu prepared and served at your accommodation.",
+    "description": "Diseña una cena alrededor de tus gustos y del equipo de cocina disponible. Acuerda compra de ingredientes, servicio de mesa y limpieza para tener una cotización completa.",
+    "descriptionEn": "Plan a dinner around your tastes and the kitchen facilities. Agree ingredient sourcing, table service and cleanup for a complete quote.",
+    "why": "Celebraciones y cenas de grupo",
+    "whyEn": "Celebrations and group dinners",
+    "neighborhood": "Medellín",
+    "mood": "Gastronomía / Dining",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Celebraciones y cenas de grupo",
+        "valueEn": "Celebrations and group dinners"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Menú privado en alojamiento autorizado",
+        "valueEn": "Private menu at an approved accommodation"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Menú, alergias, cocina, personal y limpieza",
+        "valueEn": "Menu, allergies, kitchen, staff and cleanup"
+      }
+    ]
+  },
+  {
+    "id": "inspiracion-vip-el-arte-de-resolver",
+    "slug": "inspiracion-vip-el-arte-de-resolver",
+    "name": "Asistencia personal de viaje",
+    "nameEn": "Personal travel assistance",
+    "category": "vip",
+    "tagline": "Reservas, cambios y logística en un mismo resumen.",
+    "taglineEn": "Reservations, changes and logistics in one brief.",
+    "description": "Reúne las gestiones que necesitas resolver durante la estancia. Define prioridades, idioma y horario de atención; cada reserva o acceso requiere confirmación individual.",
+    "descriptionEn": "Bring together the arrangements you need during your stay. Define priorities, language and support hours; every booking or access request needs individual confirmation.",
+    "why": "Viajeros con una agenda personalizada",
+    "whyEn": "Travelers with a personalized schedule",
+    "neighborhood": "Medellín",
+    "mood": "Logística / Logistics",
+    "featured": false,
+    "details": [
+      {
+        "es": "Ideal para",
+        "en": "Best for",
+        "valueEs": "Viajeros con una agenda personalizada",
+        "valueEn": "Travelers with a personalized schedule"
+      },
+      {
+        "es": "Formato a solicitar",
+        "en": "Format to request",
+        "valueEs": "Asistencia con tareas y horarios acordados",
+        "valueEn": "Assistance with agreed tasks and hours"
+      },
+      {
+        "es": "Antes de cotizar",
+        "en": "Before quoting",
+        "valueEs": "Alcance, tiempos de respuesta, honorarios y terceros",
+        "valueEn": "Scope, response times, fees and third parties"
+      }
+    ]
+  }
+]

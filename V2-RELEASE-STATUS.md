@@ -38,3 +38,12 @@ Feature branch is committed locally. Publishing it was blocked twice by automati
 The user explicitly approved publishing in the follow-up turn. GitHub commit cb71347e79c44353456ff8c60c5f369b798428ba was published to feat/aurea-v2-partner-proposal using the connected GitHub app (the terminal has no GitHub write credentials). The remote tree exactly matched the locally built tree. Vercel deployment dpl_EUYyQzTVz2ShmaqGTkgu1XaDc2E3 reached READY as a preview.
 
 HTTP checks passed for all 19 public routes, all linked listing-detail pages and noindex. Next.js streamed not-found responses use status 200 with noindex, as documented by Next.js; the test now validates the branded error UI and noindex. Legacy branding on loading/404 screens was corrected and error pages made bilingual. Browser interaction/visual QA remains unverified. Operational blockers above remain in effect.
+
+## Sales presentation audit — October 22, 2026
+- Replaced all 32 generic concepts with specific bilingual service formats, distinct descriptions and practical planning details. Retained every existing listing ID and URL.
+- Added 32 unique local WebP photographs (about 3.3 MB total) with source and license records in lib/listing-photo-manifest.json and public credits. Genuine Comuna 13 and Guatapé scenes supplement the existing Medellín hero. Service photographs remain explicitly illustrative. Excluded falsely labeled neighborhood photos and unsuitable service images.
+- Tightened homepage, category, concierge and partner copy. Category imagery now matches its service. Removed repetitive placeholder galleries; related services are selected to complement each category.
+- Added /partners/guide with bilingual meeting script, 10-minute walkthrough, package recommendations, qualification questions, clear answers, follow-up wording and downloadable meeting notes.
+- Added inquiry downloads, visible selected-service summaries, accent-insensitive search, current-content reconciliation for saved favorites, shared proposal language, photo credits and deployment-aware social image URLs.
+- Build and TypeScript passed; all 32 image files decode and have distinct hashes. Browser QA remains unavailable due to the previously reported browser URL policy block; mobile interaction and print pagination are not verified.
+- This release is a sales presentation. Automatic inquiry delivery, CRM, partner accounts and payments still require activation. Package billing starts only after the agreed listing and inquiry flow are active.

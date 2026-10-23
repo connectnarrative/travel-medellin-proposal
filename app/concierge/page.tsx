@@ -10,7 +10,7 @@ export default async function ConciergePage({searchParams}:{searchParams:Promise
  <div className="aurea-landing-overlay"/>
  <div className="aurea-landing-heading"><span className="eyebrow">AUREA / PRIVATE CONCIERGE</span>
  <h1><T es="Cada viaje es" en="Every journey is"/><br/><em><T es="personal." en="personal."/></em></h1>
- <p><T es="Tú imaginas lo extraordinario. Nosotros ayudamos a diseñar los detalles. De una escapada de fin de semana a una experiencia completamente privada." en="You imagine the extraordinary. We help shape the details. From a weekend escape to an entirely private experience."/></p>
+ <p><T es="Reúne fechas, alojamiento, transporte y experiencias en una solicitud. Puedes empezar desde cero o con tus favoritos de la colección." en="Bring dates, stays, transport and experiences into one inquiry. Start from scratch or with your collection favorites."/></p>
  <a className="button gold" href="#plan"><T es="DISEÑA TU VIAJE" en="DESIGN YOUR TRIP"/><ArrowUpRight size={17}/></a>
  </div>
 </section>
@@ -23,6 +23,6 @@ export default async function ConciergePage({searchParams}:{searchParams:Promise
  <div className="aurea-benefit"><ShieldCheck size={23}/><span><T es="Transporte, logística y servicios privados" en="Transportation, logistics and private services"/></span></div>
  <p className="demo-note"><T es="Una solicitud no es una reserva. Las opciones y condiciones se verifican directamente antes de cotizar." en="An inquiry is not a reservation. Options and terms are verified before quoting."/></p>
  </div>
- <div className="aurea-form-wrap"><span className="eyebrow">START THE CONVERSATION</span><h3><T es="Tu próximo capítulo." en="Your next chapter."/></h3><RequestForm kind="trip" selected={selected}/></div>
+ <div className="aurea-form-wrap"><span className="eyebrow">START THE CONVERSATION</span><h3><T es="Los detalles de tu viaje." en="Your trip details."/></h3><RequestForm kind="trip" selected={selected}/></div>
 </section>
 </main>}
