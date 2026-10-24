@@ -66,6 +66,7 @@ export function RequestForm({kind,selected=[],packageName='',businessName='',sec
     <button className="button gold" type="button" onClick={async()=>{try{await navigator.clipboard.writeText(brief);setCopied(true);}catch{setError(label('No se pudo copiar automáticamente. Selecciona el texto anterior.','Automatic copying unavailable. Select the text above.'));}}}>
       {copied?label('COPIADO','COPIED'):label('COPIAR SOLICITUD','COPY INQUIRY')}
     </button>
+    <button type="button" className="button brief-download" onClick={async()=>{try{if(typeof navigator.share==='function'){await navigator.share({title:kind==='partner'?'AUREA — PARTNERSHIP BRIEF':'AUREA — JOURNEY BRIEF',text:brief});}else{await navigator.clipboard.writeText(brief);setCopied(true);}}catch(e){if((e as Error).name!=='AbortError')setError(label('No fue posible compartir; usa copiar o descargar.','Could not share; please copy or download instead.'));}}}>{label('COMPARTIR CON MI CONTACTO','SHARE WITH MY CONTACT')}</button>
     <button type="button" className="button brief-download" onClick={downloadBrief}>{label('DESCARGAR RESUMEN','DOWNLOAD BRIEF')}</button>
     <button type="button" className="text-link" style={{marginLeft:18,marginTop:20}} onClick={()=>{setBrief('');setCopied(false);setError('')}}>{label('EDITAR','EDIT')}</button>
     {error&&<p className="error" role="alert">{error}</p>}
