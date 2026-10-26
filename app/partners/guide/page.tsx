@@ -1,4 +1,4 @@
-import type {Metadata} from 'next';
-import {PartnerGuide} from './presenter';
-export const metadata:Metadata={title:'Guía de reuniones para aliados',robots:{index:false,follow:false}};
-export default function Page(){return <PartnerGuide/>}
+import {notFound} from 'next/navigation';
+export const metadata={robots:{index:false,follow:false}};
+// Public demo: no internal sales guide or administration content.
+export default function Page(){notFound();}
