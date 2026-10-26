@@ -165,3 +165,59 @@ body,button,input,textarea,select{font-family:Montserrat,Geist,Arial,sans-serif}
   .partner-preview-facts>div{border-color:#b4a991}
   .partner-preview-explanation .button{display:none}
 }
+
+
+/* AUREA private invitation refinement — quieter contrast, restrained champagne accents. */
+.partner-acquisition,.proposal-page{--aurea-champagne:#d4bd91;--aurea-charcoal:#171816}
+.partner-acquisition .partner-new-hero{min-height:720px}
+.partner-acquisition .partner-new-hero .aurea-landing-heading{max-width:1110px}
+.partner-acquisition .partner-new-hero .aurea-landing-heading h1{font-size:clamp(54px,6.75vw,110px);letter-spacing:-.044em;line-height:1.06;text-wrap:balance}
+.partner-acquisition .partner-new-hero .aurea-landing-heading p{max-width:560px;color:#e7e0d3}
+.partner-acquisition .partner-new-hero>img{filter:saturate(.64) contrast(1.07);transform:scale(1.012)}
+.partner-acquisition .partner-new-hero .aurea-landing-overlay{background:linear-gradient(90deg,rgba(13,14,12,.96),rgba(15,15,13,.72) 55%,rgba(15,15,13,.12)),linear-gradient(0deg,#141410bd,transparent 60%)}
+.partner-acquisition .eyebrow,.proposal-page .eyebrow{letter-spacing:.23em}
+.partner-acquisition .button.gold,.proposal-page .button.gold{background:#d0b98b;border-color:#d0b98b;color:#161815;letter-spacing:.135em}
+.partner-acquisition .button.gold:hover,.proposal-page .button.gold:hover{background:#e2cb9f;border-color:#e2cb9f}
+.partner-acquisition .partner-value{padding-top:125px;padding-bottom:125px}
+.partner-acquisition .partner-path{gap:46px}
+.partner-acquisition .partner-path article{border-top:1px solid #ad9876}
+.partner-acquisition .partner-path h3{letter-spacing:-.028em}
+.partner-acquisition .partner-proof{background:#1b1c1a;padding-top:135px;padding-bottom:135px}
+.partner-acquisition .partner-sector-grid{gap:24px}
+.partner-acquisition .partner-sector-card{min-height:560px;border:1px solid #6d6251;box-shadow:0 28px 60px rgba(0,0,0,.16)}
+.partner-acquisition .partner-sector-card .partner-sector-scrim{background:linear-gradient(0deg,rgba(9,13,10,.95),rgba(9,13,10,.26) 74%)}
+.partner-acquisition .partner-sector-card:hover{border-color:#d4bd91}
+.partner-acquisition .partner-sector-card strong{color:#e4c898}
+.partner-acquisition .partner-two-plans{gap:28px}
+.partner-acquisition .partner-two-plans article{padding:55px;border-color:#c9bea9;box-shadow:0 14px 44px rgba(42,35,25,.06)}
+.partner-acquisition .partner-two-plans .partner-premium-plan{background:#1d201c;color:#f4f0e8;border:1px solid #ad9672;box-shadow:inset 0 0 0 7px #1d201c,inset 0 0 0 8px #625940}
+.partner-acquisition .partner-premium-plan h3{color:#f4f0e8}
+.partner-acquisition .partner-final-cta{background:#1a1d1a;padding-top:125px;padding-bottom:125px;border-top:1px solid #635743}
+.proposal-page .proposal-cover{min-height:770px}
+.proposal-page .proposal-cover>img{filter:saturate(.73) contrast(1.04)}
+.proposal-page .proposal-cover-shade{background:linear-gradient(90deg,rgba(14,16,13,.95),rgba(15,17,15,.77) 56%,rgba(17,20,18,.12))}
+.proposal-page .proposal-cover h1{text-wrap:balance;letter-spacing:-.046em;line-height:1.1}
+.proposal-page .proposal-cover-copy{max-width:1040px}
+.proposal-page .proposal-cover-copy p{max-width:545px}
+.proposal-page .proposal-edition{color:#e5cf9f}
+.proposal-page .partner-preview-window{border-color:#c8b994;box-shadow:0 34px 90px #0006}
+.proposal-page .partner-preview-image>img{filter:saturate(.84) contrast(1.05)}
+.proposal-page .partner-preview-explanation h3{text-wrap:balance;line-height:1.13}
+.proposal-page .package-card.signature{background:#1d201c;border-color:#bca77e;box-shadow:inset 0 0 0 6px #1d201c,inset 0 0 0 7px #605945}
+.proposal-page .package-card.signature .package-price{color:#f4f0e8}
+.proposal-page .sector-story{border-color:#7c6b50}
+.proposal-page .partner-preview-status{letter-spacing:.16em}
+.proposal-page .comparison-scroll tbody tr:hover{background:rgba(212,189,145,.04)}
+.proposal-page .proposal-application{background:#1c201b}
+@media(max-width:760px){
+ .partner-acquisition .partner-new-hero{min-height:670px}
+ .partner-acquisition .partner-new-hero .aurea-landing-heading h1{font-size:clamp(42px,10.4vw,68px);line-height:1.12;letter-spacing:-.037em}
+ .partner-acquisition .partner-value,.partner-acquisition .partner-proof,.partner-acquisition .partner-final-cta{padding-top:74px;padding-bottom:74px}
+ .partner-acquisition .partner-path{gap:0}
+ .partner-acquisition .partner-sector-card{min-height:480px}
+ .partner-acquisition .partner-two-plans article{padding:33px 26px}
+ .proposal-page .proposal-cover{min-height:650px;padding-top:100px}
+ .proposal-page .proposal-cover h1{font-size:clamp(41px,10vw,65px)}
+ .proposal-page .partner-preview-window{box-shadow:0 18px 40px #0005}
+}
+@media(prefers-reduced-motion:reduce){.partner-acquisition .partner-sector-card img{transition:none}}
