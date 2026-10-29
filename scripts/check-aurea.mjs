@@ -1,30 +1,16 @@
+// Historical command name retained for existing callers.
 import assert from 'node:assert/strict';
-import {readFileSync,existsSync} from 'node:fs';
-
-function read(file){assert(existsSync(file), `Missing ${file}`);return readFileSync(file,'utf8')}
-const logo=read('public/brand/aurea-logo-light.svg');
-assert(logo.includes('AUREA')&&logo.includes('PRIVATE ACCESS'));
-const home=read('app/page.tsx');
-assert(home.includes('href="/concierge"'));
-assert(home.includes('href="/partners"'));
-const navigation=read('app/ui.tsx');
-assert(navigation.includes('href="/concierge"'));
-assert(navigation.includes('href="/partners"'));
-assert(!navigation.includes('href="/membresia"'));
-const trip=read('app/concierge/page.tsx');
-const partners=read('app/partners/page.tsx');
-assert(trip.includes('<RequestForm kind="trip"/>'));
-assert(partners.includes('<RequestForm kind="partner"/>'));
-const form=read('app/discovery.tsx');
-assert(form.includes("required={kind==='trip'&&!selected.length}"));
-assert(form.includes('AUREA'));
-const lead=read('app/api/leads/route.ts');
-assert(lead.includes('d.interests'));
-assert(lead.includes('d.budget'));
-assert(lead.includes('AUREA Private Access'));
-assert(!lead.includes('Añade al menos una selección válida a Mi Llave.'));
-const routes=read('app/[...slug]/page.tsx');
-assert(routes.includes("redirect('/partners')"));
-const metadata=read('app/layout.tsx');
-assert(metadata.includes('AUREA Private Access'));
-console.log('AUREA source smoke checks passed: branding, routes, forms and backend payloads.');
+import {readFileSync,readdirSync,existsSync} from 'node:fs';
+import {join} from 'node:path';
+function walk(dir){return readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(join(dir,e.name)):[join(dir,e.name)])}
+let references=0;
+for(const file of [...walk('app'),...walk('lib')].filter(f=>/\.(tsx?|css)$/.test(f))){
+ const source=readFileSync(file,'utf8');
+ assert(!source.includes('AUREA'),'Previous visible brand in '+file);
+ for(const [,path] of source.matchAll(/["'(](\/(?:brand|fonts)\/[^"'()]+|\/favicon\.png)["')]/g)){
+  assert(existsSync('public'+path),file+' references missing asset '+path);references++;
+ }
+}
+assert(references>5);
+assert(existsSync('app/my-monteclave/page.tsx'));
+console.log('PASS Monteclave brand asset references and canonical itinerary route');

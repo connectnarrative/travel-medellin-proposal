@@ -1,3 +1,2 @@
-import {MyKey} from '../discovery';
-export const metadata={title:'My AUREA — Your private itinerary',robots:{index:false,follow:false}};
-export default function Page(){return <MyKey/>}
+import {redirect} from 'next/navigation';
+export default function Page(){redirect('/my-monteclave')}

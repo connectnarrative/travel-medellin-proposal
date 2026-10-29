@@ -18,7 +18,7 @@ export async function siteSettings():Promise<SiteSettings>{
   return {
     heroImage:'/images/hero.webp',heroAlt:'El valle de Medellín al atardecer',
     coffeeImage:'/images/coffee.webp',coffeeAlt:'Una taza de café colombiano',
-    logoUrl:'/brand/aurea-logo-light.svg',whatsapp:'',seoLive:false
+    logoUrl:'/brand/monteclave-emblem.png',whatsapp:'',seoLive:false
   };
 }
 
