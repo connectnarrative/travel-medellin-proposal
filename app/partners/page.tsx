@@ -17,13 +17,23 @@ export default function PartnersPage(){return <main id="main" className="partner
     <div className="monteclave-landing-heading">
       <span className="eyebrow">MONTECLAVE / MEDELLÍN</span>
       <h1><T es="Tu negocio merece" en="Your business deserves"/><br/><T es="ser parte del viaje." en="a place in the journey."/></h1>
-      <p><T es="Un perfil bilingüe para mostrar tu negocio, formar parte de una colección y ayudar al viajero a planear su visita." en="A bilingual profile to showcase your business, join a collection and help travelers plan their visit."/></p>
+      <p><T es="Presenta tu experiencia ante viajeros que exploran Medellín: una vitrina editorial bilingüe, presencia en una colección curada y una forma de preparar solicitudes con contexto." en="Present your experience to travelers exploring Medellín: a bilingual editorial showcase, placement in a curated collection, and a way to prepare inquiries with context."/></p>
       <div className="partner-hero-actions">
         <a className="button gold" href="/partners/proposal#preview"><T es="VER CÓMO APARECERÍA MI NEGOCIO" en="PREVIEW MY BUSINESS"/><ArrowUpRight size={17}/></a>
         <a className="partner-hero-secondary" href="/partners/proposal#packages"><T es="CONOCER LOS PLANES · $200 / $500" en="VIEW PLANS · $200 / $500"/><ArrowUpRight size={15}/></a>
       </div>
     </div>
     <span className="partner-hero-caption"><T es="Imagen ilustrativa · Colección en formación" en="Illustrative image · Collection in development"/></span>
+  </section>
+
+  <section className="section ivory partner-value">
+    <span className="eyebrow">WHY MONTECLAVE</span>
+    <div className="partner-value-intro"><h2><T es="No vendas un anuncio." en="Not just an ad."/><br/><T es="Presenta una experiencia." en="Show the experience."/></h2><p><T es="La decisión de un viajero comienza mucho antes de escribir un mensaje. MONTECLAVE permite descubrir un lugar, entender su propuesta, guardarlo con otros planes y preparar una solicitud relevante. Estamos seleccionando la primera colección. La incorporación depende de criterios editoriales, acuerdos claros y estándares de servicio." en="A traveler's decision starts long before they send a message. MONTECLAVE helps guests discover a place, understand its offering, save it with other plans and prepare a relevant inquiry. We are selecting the first collection. Inclusion follows editorial standards, clear agreements and service quality."/></p></div>
+    <div className="partner-path">
+      <article><span>01 / DISCOVER</span><h3><T es="Descubrir" en="Discover"/></h3><p><T es="Perfil bilingüe con imágenes, ubicación y razones para elegirte." en="Bilingual profile with imagery, location and reasons to choose you."/></p></article>
+      <article><span>02 / SAVE</span><h3><T es="Guardar" en="Save"/></h3><p><T es="El viajero suma tu propuesta a My MONTECLAVE junto con su itinerario." en="Guests add your experience to My MONTECLAVE alongside their itinerary."/></p></article>
+      <article><span>03 / INQUIRE</span><h3><T es="Consultar" en="Inquire"/></h3><p><T es="Una solicitud preparada con fechas, tipo de ocasión y preferencias." en="A prepared inquiry with dates, occasion and preferences."/></p></article>
+    </div>
   </section>
 
   <section className="section partner-proof">
