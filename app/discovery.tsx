@@ -86,7 +86,7 @@ export function RequestForm({kind,selected=[],packageName='',businessName='',sec
         {field('location','Ciudad y ubicación','City and location','text',true)}
         {field('credentials','Licencias o credenciales, si aplica','Licenses or credentials, if applicable')}
         {field('portfolio','Enlace a fotos o portafolio','Photo or portfolio link')}
-        {!packageName&&<label>{label('Paquete de interés','Package of interest')}<select name="package" defaultValue={draft.package||'Collection — $200 USD/month'}><option>Collection — $200 USD/month</option><option>Signature — $500 USD/month</option></select></label>}
+        {!packageName&&<label>{label('Paquete de interés','Package of interest')}<select name="package" defaultValue={draft.package||'Collection — $250 USD/month'}><option>Collection — $250 USD/month</option><option>Signature — $500 USD/month</option></select></label>}
       </>:<>
         {field('arrival','Llegada','Arrival','date',true)}
         {field('departure','Salida','Departure','date',true)}
